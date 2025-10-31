@@ -28,9 +28,9 @@ export const heroContent = {
   // IMAGE OPTION: Used when videoUrl is empty
   backgroundImage: heroImage,
   
-  title: "Marrakesh's #1 Sports Villa",
+  title: "Marrakech's No.1 Sports Villa",
   subtitle: "Luxury 6-Bedroom Villa with Private Padel Court",
-  description: "This villa is booked by families, couples, and companies who want to train, relax, and play — all in one place.",
+  description: "This villa is booked by those who want to train, relax, and play — all in one place.",
   
   badges: [
     { text: "20 mins from Medina", icon: "MapPin" },
@@ -144,7 +144,7 @@ export const experienceContent = {
   
   experiences: [
     "Wake up to <strong>fresh mint tea by the pool</strong>.",
-    "Play a padel match before your <strong>chef-prepared breakfast</strong>.",
+    "Play a padel match before your <strong>cook-prepared breakfast</strong>.",
     "Train in your private gym while your friends shoot hoops.",
     "Watch the <strong>sunset over the Atlas Mountains</strong> — from your heated pool."
   ],
@@ -163,16 +163,16 @@ export const pricingContent = {
   pricePerPerson: "£55",
   
   features: [
-    "6 ensuite bedrooms with premium linens",
-    "Private padel court & basketball court",
-    "Heated Bali stone pool (30°C year-round)",
+    "6 double bedrooms",
+    "Private padel & basketball court",
+    "Heated Bali stone pool",
+    "Outdoor TV & Gym",
     "Private Cook & Maid service",
-    "Mercedes Vito airport transfers"
+    "Mercedes Vito airport transfers included"
   ],
   
   badges: [
-    { text: "Only a few summer dates left!", icon: "Calendar" },
-    { text: "Klarna available", icon: "CreditCard" },
+    { text: "Dates are going quickly", icon: "Calendar" },
     { text: "£100 Amazon Voucher bonus", icon: "Gift" }
   ],
   

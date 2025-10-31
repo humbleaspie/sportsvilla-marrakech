@@ -149,7 +149,7 @@ export const experienceContent = {
     "Watch the <strong>sunset over the Atlas Mountains</strong> — from your heated pool."
   ],
   
-  closingStatement: "Everything is handled. From airport pickup to club bookings — we manage it all."
+  closingStatement: ""
 };
 
 // ==========================================

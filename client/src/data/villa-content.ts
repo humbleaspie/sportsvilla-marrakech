@@ -7,7 +7,7 @@
 // To add your own images: Place them in the 'attached_assets' folder and import like this:
 // import myImage from "@assets/my-image.jpg";
 
-import heroImage from "@assets/generated_images/2.png";
+import heroImage from "@assets/generated_images/video.mp4";
 import poolImage from "@assets/generated_images/Bali_stone_pool_loungers_57cd748d.png";
 import padelImage from "@assets/generated_images/Pristine_padel_court_sunset_48cbb9e6.png";
 import basketballImage from "@assets/generated_images/Basketball_court_dramatic_lighting_3860707c.png";

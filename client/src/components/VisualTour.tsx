@@ -1,47 +1,5 @@
 import { useState } from "react";
-import poolImage from "@assets/generated_images/Bali_stone_pool_loungers_57cd748d.png";
-import padelImage from "@assets/generated_images/Pristine_padel_court_sunset_48cbb9e6.png";
-import basketballImage from "@assets/generated_images/Basketball_court_dramatic_lighting_3860707c.png";
-import outdoorTvImage from "@assets/generated_images/Outdoor_TV_entertainment_area_b52a60cb.png";
-import chefImage from "@assets/generated_images/Private_chef_plating_gourmet_103305f4.png";
-import bedroomImage from "@assets/generated_images/Luxury_ensuite_bedroom_1ba22fc6.png";
-import mercedesImage from "@assets/generated_images/Mercedes_Vito_luxury_transfer_39ea95cd.png";
-import gymImage from "@assets/generated_images/Luxury_home_gym_equipment_91ef8979.png";
-
-const galleryImages = [
-  {
-    src: poolImage,
-    caption: "Your own heated Bali stone pool — 30° year-round"
-  },
-  {
-    src: padelImage,
-    caption: "Play padel under the Moroccan sun"
-  },
-  {
-    src: basketballImage,
-    caption: "Full-size basketball court with dramatic lighting"
-  },
-  {
-    src: outdoorTvImage,
-    caption: "Stream Netflix poolside or catch the match outdoors"
-  },
-  {
-    src: chefImage,
-    caption: "Private chef preparing gourmet meals daily"
-  },
-  {
-    src: gymImage,
-    caption: "Fully-equipped gym with Atlas Mountain views"
-  },
-  {
-    src: bedroomImage,
-    caption: "6 beautiful ensuite bedrooms with premium linens"
-  },
-  {
-    src: mercedesImage,
-    caption: "Mercedes Vito airport transfers included"
-  }
-];
+import { galleryImages } from "@/data/villa-content";
 
 export default function VisualTour() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);

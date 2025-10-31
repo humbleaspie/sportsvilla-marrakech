@@ -2,10 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Calendar, CreditCard, Gift } from "lucide-react";
+import { whatsappConfig } from "@/data/villa-content";
 
 export default function PricingSection() {
-  const whatsappNumber = "+447454454984";
-  const whatsappMessage = encodeURIComponent("Hi! I saw the Sports Villa online — can I get a quote?");
+  const whatsappNumber = whatsappConfig.phoneNumber;
+  const whatsappMessage = encodeURIComponent(whatsappConfig.defaultMessage);
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${whatsappMessage}`;
 
   return (

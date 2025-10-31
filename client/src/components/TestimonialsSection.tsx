@@ -1,27 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Quote } from "lucide-react";
-
-const testimonials = [
-  {
-    quote: "Unreal! My teens were on the court while I was in the pool. Best holiday ever.",
-    name: "Jamie T.",
-    location: "UK",
-    initials: "JT"
-  },
-  {
-    quote: "Everything was smooth — transfers, chef, reservations. Felt like Dubai, but better.",
-    name: "Reema A.",
-    location: "UAE",
-    initials: "RA"
-  },
-  {
-    quote: "The padel court is world-class. We trained every morning and the chef kept us fueled. Incredible experience.",
-    name: "Marcus L.",
-    location: "USA",
-    initials: "ML"
-  }
-];
+import { testimonials } from "@/data/villa-content";
 
 export default function TestimonialsSection() {
   return (

@@ -1,10 +1,11 @@
 import { MessageCircle } from "lucide-react";
 import { useState } from "react";
+import { whatsappConfig } from "@/data/villa-content";
 
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
-  const whatsappNumber = "+447454454984";
-  const whatsappMessage = encodeURIComponent("Hi! I saw the Sports Villa online — can I get a quote?");
+  const whatsappNumber = whatsappConfig.phoneNumber;
+  const whatsappMessage = encodeURIComponent(whatsappConfig.defaultMessage);
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${whatsappMessage}`;
 
   return (

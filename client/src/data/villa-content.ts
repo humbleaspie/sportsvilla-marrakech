@@ -30,12 +30,12 @@ export const heroContent = {
   
   title: "Marrakesh's #1 Sports Villa",
   subtitle: "Luxury 6-Bedroom Villa with Private Padel Court",
-  description: "This villa is booked by athletes, influencers, and elite families who want to train, relax, and play — all in one place.",
+  description: "This villa is booked by families, couples, and companies who want to train, relax, and play - all in one place.",
   
   badges: [
-    { text: "10 mins from Medina", icon: "MapPin" },
+    { text: "20 mins from Medina", icon: "MapPin" },
     { text: "Sleeps 12", icon: "Users" },
-    { text: "From £850/night", icon: "Home" }
+    { text: "From £650/night", icon: "Home" }
   ],
   
   ctaText: "Chat to our team via WhatsApp"

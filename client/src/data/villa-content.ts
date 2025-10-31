@@ -7,7 +7,7 @@
 // To add your own images: Place them in the 'attached_assets' folder and import like this:
 // import myImage from "@assets/my-image.jpg";
 
-import heroImage from "@assets/generated_images/video.mp4";
+import heroVideo from "@assets/generated_images/video.mp4";
 import poolImage from "@assets/generated_images/Bali_stone_pool_loungers_57cd748d.png";
 import padelImage from "@assets/generated_images/Pristine_padel_court_sunset_48cbb9e6.png";
 import basketballImage from "@assets/generated_images/Basketball_court_dramatic_lighting_3860707c.png";
@@ -23,10 +23,10 @@ import gymImage from "@assets/generated_images/Luxury_home_gym_equipment_91ef897
 export const heroContent = {
   // VIDEO OPTION: Set this to your video URL to use video instead of image
   // Example: videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID" or "/path/to/your/video.mp4"
-  videoUrl: "", // Leave empty to use image instead
+  videoUrl: heroVideo, // Leave empty to use image instead
   
-  // IMAGE OPTION: Used when videoUrl is empty
-  backgroundImage: heroImage,
+  // IMAGE OPTION: Used when videoUrl is empty (not used when video is set)
+  backgroundImage: "",
   
   title: "Marrakech's No.1 Sports Villa",
   subtitle: "Luxury 6-Bedroom Villa with Private Padel Court",

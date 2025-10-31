@@ -1,0 +1,106 @@
+✅ THE STRATEGY
+What converts best for villa landing pages:
+
+1 Hero villa
+
+1 offer
+
+1 goal (lead capture or booking call)
+
+No fluff. No menus. No distractions.
+
+💡 LANDING PAGE STRUCTURE (Mockup + Script)
+
+I'll break this into sections, exactly how you or a web designer can build it — in WordPress, Webflow, GoHighLevel, or Carrd.
+
+🔝 SECTION 1 – “HOOK + CREDIBILITY + CTA”
+
+[Full-screen background video or image of the villa — drone footage of paddle court, pool, or sunset]
+
+🏆 Marrakesh’s #1 Sports Villa Experience
+Private 6-Bedroom Villa with Paddle Court, Heated Pool & Chef Service
+
+“This villa is booked by athletes, influencers, and elite families who want to train, relax, and play — all in one place.”
+
+✅ Availability for [Month]
+📍 10 mins from Medina – Full concierge included
+🛏 Sleeps 12 · From £850/night
+📆 [Check Availability Button]
+📲 [WhatsApp Instant Quote Button]
+
+📸 SECTION 2 – “VISUAL TOUR (TRUST)”
+
+[Carousel or grid of 8–10 high-impact images]
+
+Bali stone heated pool
+
+Paddle court in action
+
+Basketball court with sunset lighting
+
+Outdoor TV setup
+
+Private chef plating dishes
+
+Gym shots
+
+6 beautiful ensuite bedrooms
+
+Mercedes Vito arrival
+
+🖼 Each image should have a caption, e.g.
+
+“Your own heated Bali stone pool — 30° year-round”
+“Play paddle under the Moroccan sun”
+“Stream Netflix poolside or catch the match outdoors”
+
+💬 SECTION 3 – “WHO THIS IS FOR”
+
+Use Hormozi-style value targeting.
+
+This villa is perfect for:
+✅ Family trips with active teens
+✅ Sports teams or corporate retreats
+✅ Groups of friends who want sun, fun, and total privacy
+✅ Clients used to Dubai-style service — but at ⅓ of the price
+
+🧠 SECTION 4 – “THE EXPERIENCE”
+
+Use emotional and sensory language.
+
+Wake up to fresh mint tea by the pool.
+Play a paddle match before your chef-prepared breakfast.
+Train in your private gym while your friends shoot hoops.
+Watch the sunset over the Atlas Mountains — from your heated pool.
+
+Everything is handled. From airport pickup to club bookings — we manage it all.
+
+💸 SECTION 5 – “PRICE, AVAILABILITY + INCENTIVE”
+
+Use urgency + incentive.
+
+✅ From £850/night (Sleeps 12 = £70 per person)
+📅 Only a few summer dates left!
+💳 Klarna available — Pay deposit in 30 or 60 days
+🎁 Bonus: Book this week, get a £100 Amazon Voucher
+
+[ CHECK AVAILABILITY NOW ]
+[ WHATSAPP FOR QUOTE ]
+
+🌟 SECTION 6 – “TESTIMONIALS / REVIEWS”
+
+Add 2–3 short reviews. Ideally with profile photo or name. Use WhatsApp screenshots or video snippets if you have them.
+
+“Unreal! My teens were on the court while I was in the pool. Best holiday ever.”
+— Jamie T., UK
+
+“Everything was smooth — transfers, chef, reservations. Felt like Dubai, but better.”
+— Reema A., UAE
+
+📲 SECTION 7 – “WHATSAPP INTEGRATION”
+
+Fixed floating button:
+
+💬 Message us for Instant Quote
+➡️ Opens WhatsApp pre-filled message:
+“Hi! I saw the Sports Villa online — can I get a quote for [date]?”

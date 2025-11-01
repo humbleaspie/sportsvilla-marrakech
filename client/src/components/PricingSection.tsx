@@ -31,7 +31,7 @@ export default function PricingSection() {
           </Badge>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6">
           {pricingContent.seasons.map((season, index) => (
             <Card key={index} className="p-4 md:p-6 border-2 border-primary/20">
               <div className="text-center">

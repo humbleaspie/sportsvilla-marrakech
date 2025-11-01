@@ -35,12 +35,12 @@ export const heroContent = {
   description: "",
   
   badges: [
-    { text: "Heated pool, Basketball, Gym", icon: "Dumbbell" },
+    { text: "Padel, Pool, Basketball, Gym", icon: "Dumbbell" },
     { text: "Sleeps 12", icon: "Users" },
     { text: "From £650/night", icon: "Home" }
   ],
   
-  ctaText: "Check Availability"
+  ctaText: "Get Instant Quote Via WhatsApp"
 };
 
 // ==========================================

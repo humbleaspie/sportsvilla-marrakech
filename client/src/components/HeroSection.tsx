@@ -27,7 +27,7 @@ export default function HeroSection() {
             ref={videoRef}
             autoPlay
             loop
-            muted={isMuted}
+            muted
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >

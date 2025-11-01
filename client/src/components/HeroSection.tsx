@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Users, Home, Volume2, VolumeX, Instagram, Globe } from "lucide-react";
-import { heroContent, whatsappConfig, socialLinks } from "@/data/villa-content";
+import { MapPin, Users, Home, Volume2, VolumeX } from "lucide-react";
+import { heroContent, whatsappConfig } from "@/data/villa-content";
 
 export default function HeroSection() {
   const [isMuted, setIsMuted] = useState(true);
@@ -49,28 +49,17 @@ export default function HeroSection() {
             )}
           </button>
 
-          {/* Social Media Links */}
-          <div className="absolute top-4 left-4 z-20 flex gap-2">
-            <a
-              href={socialLinks.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black/50 hover:bg-black/70 backdrop-blur-sm text-white p-2.5 rounded-full transition-all duration-200 hover:scale-110"
-              aria-label="Visit our Instagram"
-              data-testid="link-instagram"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href={socialLinks.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black/50 hover:bg-black/70 backdrop-blur-sm text-white p-2.5 rounded-full transition-all duration-200 hover:scale-110"
-              aria-label="Visit our website"
-              data-testid="link-website"
-            >
-              <Globe className="w-5 h-5" />
-            </a>
+          {/* Brand Logo - Top Left */}
+          <div className="absolute top-6 left-6 z-20" data-testid="brand-logo">
+            <div className="text-white">
+              <h2 className="font-serif text-xl md:text-2xl font-bold tracking-wide drop-shadow-lg">
+                VIP@Marrakech
+              </h2>
+              <div className="w-full h-px bg-white/80 my-1.5 drop-shadow-md"></div>
+              <p className="text-xs md:text-sm font-light tracking-wider drop-shadow-md">
+                Luxury Villa Rentals
+              </p>
+            </div>
           </div>
         </div>
       ) : (

@@ -6,6 +6,7 @@ import OurTeamSection from "@/components/OurTeamSection";
 import PricingSection from "@/components/PricingSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <PricingSection />
       <TestimonialsSection />
       <WhatsAppButton />
+      <Footer />
     </div>
   );
 }

@@ -184,9 +184,28 @@ export const socialLinks = {
 export const pricingContent = {
   sectionTitle: "Pricing & Availability",
   
-  pricePerNight: "£650",
   guestCount: 12,
-  pricePerPerson: "£55",
+  
+  seasons: [
+    {
+      name: "Low Season",
+      regularPrice: "£750",
+      onlinePrice: "£600",
+      savings: "£150"
+    },
+    {
+      name: "Mid Season",
+      regularPrice: "£850",
+      onlinePrice: "£700",
+      savings: "£150"
+    },
+    {
+      name: "High Season",
+      regularPrice: "£950",
+      onlinePrice: "£800",
+      savings: "£150"
+    }
+  ],
   
   features: [
     "6 double bedrooms",

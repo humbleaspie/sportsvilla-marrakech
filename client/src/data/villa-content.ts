@@ -116,32 +116,37 @@ export const testimonials = [
 ];
 
 // ==========================================
-// WHO THIS IS FOR SECTION
+// WHY THIS VILLA SECTION
 // ==========================================
 export const whoThisIsForContent = {
-  sectionTitle: "Why This Villa?",
-  sectionSubtitle: "Designed for those who demand excellence and won't settle for ordinary",
+  sectionTitle: "Why This Villa",
+  sectionSubtitle: "Everything you need for an unforgettable Marrakech experience",
   
   audiences: [
     {
-      title: "Family trips with active teens",
-      description: "Give your family the perfect blend of relaxation and adventure with world-class sports facilities",
-      icon: "Users"
-    },
-    {
-      title: "Sports teams or corporate retreats",
-      description: "Train, bond, and perform at your best in a private setting designed for champions",
+      title: "5 star sports facilities",
+      description: "",
       icon: "Trophy"
     },
     {
-      title: "Groups of friends who want sun, fun, and total privacy",
-      description: "Experience the ultimate getaway with your crew — no compromises, no crowds",
-      icon: "Palmtree"
+      title: "Only 20mins from Medina",
+      description: "",
+      icon: "MapPin"
     },
     {
-      title: "Clients used to Dubai-style service — but at ⅓ of the price",
-      description: "Enjoy five-star luxury and concierge service without the premium Dubai price tag",
-      icon: "Crown"
+      title: "Cook & Maid Included",
+      description: "",
+      icon: "ChefHat"
+    },
+    {
+      title: "24/7 Security",
+      description: "",
+      icon: "Shield"
+    },
+    {
+      title: "Spacious Living Area",
+      description: "",
+      icon: "Home"
     }
   ]
 };

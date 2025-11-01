@@ -168,6 +168,7 @@ export const experienceContent = {
 export const ourTeamContent = {
   sectionTitle: "Why Book With Us?",
   benefits: [
+    "<strong>10yrs+ Experience</strong> - Specialist in Marrakech Villa Rentals",
     "<strong>Personal concierge service</strong> - from airport transfers to the best activities we have it covered.",
     "<strong>Instant response on WhatsApp</strong> - no waiting days for replies",
     "<strong>UK & Marrakech based teams</strong> - to provide the same high level of service all the way through your trip.",

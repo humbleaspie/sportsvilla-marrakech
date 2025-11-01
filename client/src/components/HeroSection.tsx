@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MapPin, Users, Home, Volume2, VolumeX } from "lucide-react";
 import { heroContent, whatsappConfig } from "@/data/villa-content";
@@ -10,6 +10,15 @@ export default function HeroSection() {
   const whatsappNumber = whatsappConfig.phoneNumber;
   const whatsappMessage = encodeURIComponent(whatsappConfig.defaultMessage);
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${whatsappMessage}`;
+
+  // Ensure video autoplays on mount
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.log("Autoplay prevented:", error);
+      });
+    }
+  }, []);
 
   const toggleMute = () => {
     if (videoRef.current) {

@@ -48,19 +48,6 @@ export default function HeroSection() {
               <Volume2 className="w-5 h-5" />
             )}
           </button>
-
-          {/* Brand Logo - Top Left */}
-          <div className="absolute top-6 left-6 z-20" data-testid="brand-logo">
-            <div className="text-white">
-              <h2 className="font-serif text-xl md:text-2xl font-bold tracking-wide drop-shadow-lg">
-                VIP@Marrakech
-              </h2>
-              <div className="w-full h-px bg-white/80 my-1.5 drop-shadow-md"></div>
-              <p className="text-xs md:text-sm font-light tracking-wider drop-shadow-md">
-                Luxury Villa Rentals
-              </p>
-            </div>
-          </div>
         </div>
       ) : (
         <div 

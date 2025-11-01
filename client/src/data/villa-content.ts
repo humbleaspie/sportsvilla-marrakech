@@ -134,13 +134,8 @@ export const whoThisIsForContent = {
       icon: "MapPin"
     },
     {
-      title: "Cook & Maid Included",
-      description: "Wake up to fresh Moroccan breakfast and enjoy gourmet meals prepared by your private cook daily.",
-      icon: "ChefHat"
-    },
-    {
-      title: "24/7 Security",
-      description: "Relax completely with round-the-clock professional security ensuring your safety and privacy.",
+      title: "Maid, Cook and 24/7 Security Included",
+      description: "Wake up to fresh Moroccan breakfast, daily housekeeping, and round-the-clock professional security ensuring your complete comfort and safety.",
       icon: "Shield"
     },
     {

@@ -3,7 +3,7 @@ import { socialLinks } from "@/data/villa-content";
 
 export default function Footer() {
   return (
-    <footer className="bg-card border-t border-border py-8">
+    <footer className="bg-card border-t border-border py-4 md:py-8">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Branding */}

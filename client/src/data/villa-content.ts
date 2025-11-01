@@ -169,10 +169,10 @@ export const ourTeamContent = {
   sectionTitle: "Why Book With Us?",
   benefits: [
     "<strong>Specialists in Marrakech Villa Rentals</strong> - 10yrs+ Experience",
-    "<strong>Personal concierge service</strong> - from airport transfers to the best activities we have it covered.",
-    "<strong>Instant response on WhatsApp</strong> - no waiting days for replies",
-    "<strong>UK & Marrakech based teams</strong> - to provide the same high level of service all the way through your trip.",
-    "<strong>Best Price Guarantee</strong> - found it cheaper on AIRBNB? We'll match it."
+    "<strong>Personal concierge service</strong> - airport transfers & activities covered.",
+    "<strong>Instant WhatsApp response</strong> - no waiting days for replies",
+    "<strong>UK & Marrakech based teams</strong> - high service all the way through.",
+    "<strong>Best Price Guarantee</strong> - found it cheaper? We'll match it."
   ]
 };
 

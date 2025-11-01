@@ -26,12 +26,12 @@ export default function VisualTour() {
 
   return (
     <section className="pt-8 pb-4 md:pt-10 md:pb-6 lg:pt-12 lg:pb-8 bg-background">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 mb-4 md:mb-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 mb-3 md:mb-6">
         <div className="text-center">
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 text-foreground">
+          <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-2 text-foreground">
             {visualTourContent.sectionTitle}
           </h2>
-          <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xs md:text-base text-muted-foreground max-w-2xl mx-auto">
             {visualTourContent.sectionSubtitle}
           </p>
         </div>

@@ -35,10 +35,12 @@ export default function VisualTour() {
             {visualTourContent.sectionSubtitle}
           </p>
         </div>
-        
-        <div className="relative">
+      </div>
+      
+      <div className="relative w-full max-w-7xl mx-auto md:px-6">
+        <div className="relative w-full md:mx-14">
           {/* Carousel Container */}
-          <div className="overflow-hidden md:mx-14" ref={emblaRef}>
+          <div className="overflow-hidden w-full" ref={emblaRef}>
             <div className="flex gap-0 md:gap-4">
               {galleryImages.map((image, index) => (
                 <div
@@ -68,11 +70,11 @@ export default function VisualTour() {
             </div>
           </div>
           
-          {/* Navigation Arrows - overlay on mobile, outside on desktop */}
+          {/* Navigation Arrows */}
           <Button
             size="icon"
             variant="outline"
-            className="absolute left-2 md:left-2 top-1/2 -translate-y-1/2 z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
+            className="absolute left-2 md:left-2 top-1/2 -translate-y-1/2 md:-translate-x-full z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
             onClick={scrollPrev}
             aria-label="Previous slide"
             data-testid="button-carousel-prev"
@@ -83,7 +85,7 @@ export default function VisualTour() {
           <Button
             size="icon"
             variant="outline"
-            className="absolute right-2 md:right-2 top-1/2 -translate-y-1/2 z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
+            className="absolute right-2 md:right-2 top-1/2 -translate-y-1/2 md:translate-x-full z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
             onClick={scrollNext}
             aria-label="Next slide"
             data-testid="button-carousel-next"

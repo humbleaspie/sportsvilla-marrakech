@@ -26,8 +26,8 @@ export default function VisualTour() {
 
   return (
     <section className="py-8 md:py-10 lg:py-12 bg-background">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="text-center mb-4 md:mb-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 mb-4 md:mb-6">
+        <div className="text-center">
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 text-foreground">
             {visualTourContent.sectionTitle}
           </h2>
@@ -37,8 +37,9 @@ export default function VisualTour() {
         </div>
       </div>
       
-      <div className="relative w-full max-w-7xl mx-auto md:px-6">
-        <div className="relative w-full md:mx-14">
+      {/* Full-width carousel container on mobile, constrained on desktop */}
+      <div className="relative w-screen left-0 md:w-full md:left-auto md:max-w-7xl md:mx-auto md:px-6">
+        <div className="relative w-screen md:w-full md:mx-14">
           {/* Carousel Container */}
           <div className="overflow-hidden w-full" ref={emblaRef}>
             <div className="flex gap-0 md:gap-4">
@@ -74,7 +75,7 @@ export default function VisualTour() {
           <Button
             size="icon"
             variant="outline"
-            className="absolute left-2 md:left-2 top-1/2 -translate-y-1/2 md:-translate-x-full z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
+            className="absolute left-4 md:left-2 top-1/2 -translate-y-1/2 md:-translate-x-full z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
             onClick={scrollPrev}
             aria-label="Previous slide"
             data-testid="button-carousel-prev"
@@ -85,7 +86,7 @@ export default function VisualTour() {
           <Button
             size="icon"
             variant="outline"
-            className="absolute right-2 md:right-2 top-1/2 -translate-y-1/2 md:translate-x-full z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
+            className="absolute right-4 md:right-2 top-1/2 -translate-y-1/2 md:translate-x-full z-10 bg-white/95 backdrop-blur-sm border-white/30 shadow-lg"
             onClick={scrollNext}
             aria-label="Next slide"
             data-testid="button-carousel-next"

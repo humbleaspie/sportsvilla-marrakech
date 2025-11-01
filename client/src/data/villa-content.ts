@@ -167,12 +167,39 @@ export const experienceContent = {
 // ==========================================
 export const ourTeamContent = {
   sectionTitle: "Why Book With Us?",
+  sectionSubtitle: "Experience and service you can trust",
+  
   benefits: [
-    "<strong>Specialists in Marrakech Villa Rentals</strong> - 10yrs+ Experience",
-    "<strong>Personal concierge service</strong> - airport transfers & activities covered.",
-    "<strong>Instant WhatsApp response</strong> - no waiting days for replies",
-    "<strong>UK & Marrakech based teams</strong> - high service all the way through.",
-    "<strong>Best Price Guarantee</strong> - found it cheaper? We'll match it."
+    {
+      title: "Marrakech Specialists",
+      description: "10+ years experience in luxury villa rentals.",
+      icon: "Award"
+    },
+    {
+      title: "Personal Concierge",
+      description: "Airport transfers & activities covered.",
+      icon: "Headphones"
+    },
+    {
+      title: "Instant WhatsApp Response",
+      description: "No waiting days for replies.",
+      icon: "MessageCircle"
+    },
+    {
+      title: "UK & Marrakech Teams",
+      description: "High service all the way through.",
+      icon: "Users"
+    },
+    {
+      title: "Best Price Guarantee",
+      description: "Found it cheaper? We'll match it.",
+      icon: "BadgeCheck"
+    },
+    {
+      title: "Trusted by 1000+ Guests",
+      description: "5-star reviews and repeat bookings.",
+      icon: "Star"
+    }
   ]
 };
 

@@ -29,9 +29,11 @@ export default function HeroSection() {
             loop
             muted
             playsInline
-            controls={false}
+            webkit-playsinline="true"
             disablePictureInPicture
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            disableRemotePlayback
+            className="absolute inset-0 w-full h-full object-cover [&::-webkit-media-controls]:!hidden [&::-webkit-media-controls-enclosure]:!hidden"
+            style={{ pointerEvents: 'none' }}
           >
             <source src={heroContent.videoUrl} type="video/mp4" />
           </video>

@@ -106,11 +106,11 @@ export default function HeroSection() {
       )}
       
       <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-6 text-center text-white">
-        <h1 className="font-serif font-bold text-3xl md:text-4xl lg:text-5xl mb-4 leading-tight">
+        <h1 className="font-serif font-bold text-2xl md:text-3xl lg:text-4xl mb-3 leading-tight">
           {heroContent.title}
         </h1>
         
-        <p className="text-lg md:text-xl font-medium mb-3">
+        <p className="text-base md:text-lg font-medium mb-2">
           {heroContent.subtitle}
         </p>
         
@@ -120,23 +120,23 @@ export default function HeroSection() {
           </p>
         )}
         
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 max-w-3xl mx-auto mb-6">
           {heroContent.badges.map((badge, index) => {
             const IconComponent = badge.icon === 'MapPin' ? MapPin : badge.icon === 'Users' ? Users : Home;
             return (
-              <div key={index} className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                <IconComponent className="w-4 h-4" />
-                <span className="text-xs md:text-sm font-medium">{badge.text}</span>
+              <div key={index} className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 border border-white/20">
+                <IconComponent className="w-3 h-3" />
+                <span className="text-xs font-medium">{badge.text}</span>
               </div>
             );
           })}
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
           <Button 
             asChild
-            size="lg" 
-            className="text-base md:text-lg px-8 py-6 bg-white/95 backdrop-blur-sm text-foreground hover:bg-white border border-white/30"
+            size="default" 
+            className="text-sm md:text-base px-6 bg-white/95 backdrop-blur-sm text-foreground hover:bg-white border border-white/30"
             data-testid="button-whatsapp-hero"
           >
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">

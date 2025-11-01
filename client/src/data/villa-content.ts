@@ -167,7 +167,12 @@ export const experienceContent = {
 // ==========================================
 export const ourTeamContent = {
   sectionTitle: "Why Book With Us?",
-  description: "10yrs plus experience in Luxury Villa rentals in Marrakech. Our mission is to make client trips unforgettable."
+  benefits: [
+    "Personal concierge service - from airport transfers to the best activities we have it covered.",
+    "Instant response on WhatsApp - no waiting days for replies",
+    "UK & Marrakech based teams - to provide the same high level of service all the way through your trip.",
+    "Best Price Guarantee - found it cheaper on AIRBNB? We'll match it."
+  ]
 };
 
 // ==========================================

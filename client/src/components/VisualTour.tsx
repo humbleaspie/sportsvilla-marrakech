@@ -5,7 +5,7 @@ export default function VisualTour() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   return (
-    <section className="pt-4 pb-6 md:pt-6 md:pb-8 lg:pt-8 lg:pb-10 bg-background">
+    <section className="pt-1 pb-6 md:pt-4 md:pb-8 lg:pt-6 lg:pb-10 bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-4 md:mb-6">
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 text-foreground">

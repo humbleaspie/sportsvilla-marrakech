@@ -102,12 +102,12 @@ export default function HeroSection() {
             {/* Info Card */}
             <div className="bg-black/50 backdrop-blur-md rounded-lg p-4 md:p-6 border border-white/20 mx-auto md:mx-0">
               {/* Feature Badges */}
-              <div className="flex flex-wrap items-center justify-center gap-3 mb-4">
+              <div className="flex items-center justify-center gap-2 md:gap-3 mb-4 overflow-x-auto">
                 {heroContent.badges.map((badge, index) => {
                   const IconComponent = badge.icon === 'MapPin' ? MapPin : badge.icon === 'Users' ? Users : Home;
                   return (
-                    <div key={index} className="flex items-center gap-1.5 text-white">
-                      <IconComponent className="w-4 h-4 flex-shrink-0" />
+                    <div key={index} className="flex items-center gap-1 text-white flex-shrink-0">
+                      <IconComponent className="w-3 h-3 md:w-4 md:h-4" />
                       <span className="text-xs md:text-sm font-medium whitespace-nowrap">{badge.text}</span>
                     </div>
                   );

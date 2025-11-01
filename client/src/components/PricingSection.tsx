@@ -44,7 +44,7 @@ export default function PricingSection() {
                     {season.regularPrice}
                   </div>
                   <div className="text-[9px] md:text-xs text-primary font-semibold mb-0.5">
-                    Special Online Price
+                    Special Online Rate
                   </div>
                   <div className="flex items-baseline justify-center gap-0.5 md:gap-2">
                     <span className="text-base md:text-3xl font-bold text-primary">{season.onlinePrice}</span>

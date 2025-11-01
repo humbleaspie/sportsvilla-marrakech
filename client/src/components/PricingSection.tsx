@@ -19,40 +19,40 @@ export default function PricingSection() {
   };
 
   return (
-    <section className="py-8 md:py-10 lg:py-12 bg-card">
+    <section className="py-6 md:py-10 lg:py-12 bg-card">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <div className="text-center mb-6">
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 text-card-foreground">
+        <div className="text-center mb-3 md:mb-6">
+          <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-2 text-card-foreground">
             {pricingContent.sectionTitle}
           </h2>
-          <Badge variant="default" className="mt-2">
+          <Badge variant="default" className="mt-1 md:mt-2 text-xs">
             <Sparkles className="w-3 h-3 mr-1" />
-            Special Online Discount - Save £150/night
+            Save £150/night
           </Badge>
         </div>
         
-        <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6">
+        <div className="grid grid-cols-3 gap-2 md:gap-4 mb-3 md:mb-6">
           {pricingContent.seasons.map((season, index) => (
-            <Card key={index} className="p-4 md:p-6 border-2 border-primary/20">
+            <Card key={index} className="p-2 md:p-6 border-2 border-primary/20">
               <div className="text-center">
-                <h3 className="font-semibold text-lg md:text-xl mb-3 text-card-foreground">
+                <h3 className="font-semibold text-xs md:text-xl mb-1 md:mb-3 text-card-foreground">
                   {season.name}
                 </h3>
                 
-                <div className="mb-3">
-                  <div className="text-sm text-muted-foreground line-through mb-1">
-                    Regular: {season.regularPrice}
+                <div className="mb-1 md:mb-3">
+                  <div className="text-[10px] md:text-sm text-muted-foreground line-through mb-0.5 md:mb-1">
+                    {season.regularPrice}
                   </div>
-                  <div className="flex items-baseline justify-center gap-2">
-                    <span className="text-2xl md:text-3xl font-bold text-primary">{season.onlinePrice}</span>
-                    <span className="text-sm md:text-base text-muted-foreground">/night</span>
+                  <div className="flex items-baseline justify-center gap-0.5 md:gap-2">
+                    <span className="text-base md:text-3xl font-bold text-primary">{season.onlinePrice}</span>
+                    <span className="text-[10px] md:text-base text-muted-foreground">/nt</span>
                   </div>
-                  <div className="text-xs md:text-sm text-primary font-semibold mt-1">
+                  <div className="text-[9px] md:text-sm text-primary font-semibold mt-0.5 md:mt-1">
                     Save {season.savings}
                   </div>
                 </div>
                 
-                <p className="text-xs md:text-sm text-muted-foreground">
+                <p className="text-[9px] md:text-sm text-muted-foreground">
                   Sleeps {pricingContent.guestCount}
                 </p>
               </div>
@@ -60,33 +60,33 @@ export default function PricingSection() {
           ))}
         </div>
         
-        <Card className="p-6 md:p-8 border-2 border-primary/20">
-          <div className="space-y-2 mb-4">
+        <Card className="p-3 md:p-8 border-2 border-primary/20">
+          <div className="space-y-1 md:space-y-2 mb-2 md:mb-4">
             {pricingContent.features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-2">
-                <Check className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                <span className="text-sm md:text-base text-card-foreground">{feature}</span>
+              <div key={index} className="flex items-start gap-1.5 md:gap-2">
+                <Check className="w-3 h-3 md:w-4 md:h-4 text-primary flex-shrink-0 mt-0.5 md:mt-1" />
+                <span className="text-xs md:text-base text-card-foreground">{feature}</span>
               </div>
             ))}
           </div>
           
-          <div className="flex flex-wrap gap-2 justify-center mb-4">
+          <div className="flex flex-wrap gap-1.5 md:gap-2 justify-center mb-2 md:mb-4">
             {pricingContent.badges.map((badge, index) => {
               const IconComponent = getIcon(badge.icon);
               return (
-                <Badge key={index} variant={index === pricingContent.badges.length - 1 ? "default" : "secondary"} className="px-3 py-1 text-xs md:text-sm">
-                  <IconComponent className="w-3 h-3 mr-1" />
+                <Badge key={index} variant={index === pricingContent.badges.length - 1 ? "default" : "secondary"} className="px-2 md:px-3 py-0.5 md:py-1 text-[10px] md:text-sm">
+                  <IconComponent className="w-2.5 h-2.5 md:w-3 md:h-3 mr-0.5 md:mr-1" />
                   {badge.text}
                 </Badge>
               );
             })}
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3">
             <Button 
               asChild
-              size="lg" 
-              className="flex-1 text-sm md:text-base"
+              size="default"
+              className="flex-1 text-xs md:text-base"
               data-testid="button-whatsapp-pricing"
             >
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
@@ -95,7 +95,7 @@ export default function PricingSection() {
             </Button>
           </div>
           
-          <p className="text-center text-xs md:text-sm text-muted-foreground mt-3">
+          <p className="text-center text-[10px] md:text-sm text-muted-foreground mt-2 md:mt-3">
             {pricingContent.bonusText}
           </p>
         </Card>

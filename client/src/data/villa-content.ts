@@ -215,10 +215,10 @@ export const pricingContent = {
   
   features: [
     "6 double bedrooms",
-    "Private padel & basketball court",
-    "Heated Bali stone pool",
+    "Padel & basketball court",
+    "Heated pool",
     "Outdoor TV & Gym",
-    "Private Cook & Maid service",
+    "Cook & Maid service",
   ],
   
   badges: [

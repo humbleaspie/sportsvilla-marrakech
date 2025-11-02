@@ -10,7 +10,7 @@ export default function FinalCTA() {
   return (
     <section className="py-8 md:py-12 bg-background">
       <div className="max-w-3xl mx-auto px-4 md:px-6 text-center">
-        <h2 className="font-serif text-2xl md:text-4xl font-semibold mb-4 md:mb-6 text-foreground">
+        <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-6 text-foreground">
           Ready to Book?
         </h2>
         <Button 

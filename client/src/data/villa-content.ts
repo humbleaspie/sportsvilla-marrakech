@@ -40,7 +40,7 @@ export const heroContent = {
     { text: "From £600/night", icon: "Home" }
   ],
   
-  ctaText: "Check Live Availability"
+  ctaText: "Get Instant Quote Via WhatsApp"
 };
 
 // ==========================================
@@ -277,5 +277,5 @@ export const testimonialsContent = {
 // ==========================================
 export const whatsappConfig = {
   phoneNumber: "+447789915588",
-  defaultMessage: "I am interested in your Marrakech Sports villa, is it available?"
+  defaultMessage: "Hi! I saw the Sports Villa online — can I get a quote?"
 };

@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import VisualTour from "@/components/VisualTour";
+import WhoThisIsFor from "@/components/WhoThisIsFor";
 import OurTeamSection from "@/components/OurTeamSection";
 import PricingSection from "@/components/PricingSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
@@ -13,6 +14,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <HeroSection />
       <VisualTour />
+      <WhoThisIsFor />
       <PricingSection />
       <HowItWorksSection />
       <OurTeamSection />

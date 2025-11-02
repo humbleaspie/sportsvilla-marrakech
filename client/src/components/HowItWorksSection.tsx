@@ -53,12 +53,6 @@ export default function HowItWorksSection() {
               </div>
             </div>
           </div>
-
-          <div className="pt-2 md:pt-3 border-t border-border">
-            <p className="text-[10px] md:text-xs text-center text-muted-foreground">
-              <span className="font-semibold">E.g.</span> 3 nights = 1.5-night deposit · 6 or 7 nights = 3-night deposit
-            </p>
-          </div>
         </Card>
       </div>
     </section>

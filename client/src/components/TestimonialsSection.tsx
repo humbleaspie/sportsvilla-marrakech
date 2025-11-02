@@ -16,26 +16,26 @@ export default function TestimonialsSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
+        <div className="grid grid-cols-3 gap-2 md:gap-6">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 
-              className="p-3 md:p-6 relative hover-elevate active-elevate-2"
+              className="p-2 md:p-6 relative hover-elevate active-elevate-2"
               data-testid={`card-testimonial-${index}`}
             >
-              <Quote className="w-6 h-6 md:w-8 md:h-8 text-primary/20 mb-1 md:mb-2" />
-              <p className="text-xs md:text-base italic mb-2 md:mb-4 text-card-foreground leading-snug md:leading-relaxed">
+              <Quote className="w-4 h-4 md:w-8 md:h-8 text-primary/20 mb-1 md:mb-2" />
+              <p className="text-[9px] md:text-base italic mb-1 md:mb-4 text-card-foreground leading-snug md:leading-relaxed">
                 "{testimonial.quote}"
               </p>
-              <div className="flex items-center gap-2">
-                <Avatar className="w-8 h-8 md:w-10 md:h-10">
-                  <AvatarFallback className="bg-primary/10 text-primary font-semibold text-xs md:text-sm">
+              <div className="flex items-center gap-1 md:gap-2">
+                <Avatar className="w-6 h-6 md:w-10 md:h-10">
+                  <AvatarFallback className="bg-primary/10 text-primary font-semibold text-[10px] md:text-sm">
                     {testimonial.initials}
                   </AvatarFallback>
                 </Avatar>
                 <div>
-                  <p className="font-semibold text-xs md:text-base text-card-foreground">{testimonial.name}</p>
-                  <p className="text-[10px] md:text-sm text-muted-foreground">{testimonial.location}</p>
+                  <p className="font-semibold text-[9px] md:text-base text-card-foreground">{testimonial.name}</p>
+                  <p className="text-[8px] md:text-sm text-muted-foreground">{testimonial.location}</p>
                 </div>
               </div>
             </Card>

@@ -26,7 +26,7 @@ export default function WhoThisIsFor() {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
           {whoThisIsForContent.audiences.map((audience, index) => {
             const IconComponent = getIcon(audience.icon);
             return (

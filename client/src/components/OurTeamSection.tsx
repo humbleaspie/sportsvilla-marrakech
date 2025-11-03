@@ -16,7 +16,7 @@ export default function OurTeamSection() {
   };
 
   const filteredBenefits = ourTeamContent.benefits.filter(
-    benefit => benefit.title !== "Instant WhatsApp Response" && benefit.title !== "Trusted by 1000+ Guests"
+    benefit => benefit.title !== "Instant WhatsApp Response" && benefit.title !== "Trusted by 1000+ Guests" && benefit.title !== "UK & Marrakech Teams"
   );
 
   return (
@@ -31,7 +31,7 @@ export default function OurTeamSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+        <div className="grid grid-cols-3 gap-2 md:gap-4">
           {filteredBenefits.map((benefit, index) => {
             const IconComponent = getIcon(benefit.icon);
             return (

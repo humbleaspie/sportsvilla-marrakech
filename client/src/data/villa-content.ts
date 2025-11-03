@@ -50,7 +50,7 @@ export const heroContent = {
 export const galleryImages = [
   {
     src: poolImage,
-    caption: "Your own heated Bali stone pool — 30° year-round"
+    caption: "Your own heated Bali stone pool"
   },
   {
     src: padelImage,

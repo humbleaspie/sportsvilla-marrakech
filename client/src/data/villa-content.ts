@@ -9,7 +9,7 @@
 
 import heroVideo from "@assets/generated_images/video.mp4";
 import poolImage from "@assets/generated_images/swimming_pool.png";
-import padelImage from "@assets/generated_images/Pristine_padel_court_sunset_48cbb9e6.png";
+import padelImage from "@assets/generated_images/padel_court.png";
 import basketballImage from "@assets/generated_images/Basketball_court_dramatic_lighting_3860707c.png";
 import outdoorTvImage from "@assets/generated_images/Outdoor_TV_entertainment_area_b52a60cb.png";
 import chefImage from "@assets/generated_images/Private_chef_plating_gourmet_103305f4.png";

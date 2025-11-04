@@ -10,7 +10,7 @@
 import heroVideo from "@assets/generated_images/video.mp4";
 import poolImage from "@assets/generated_images/swimming_pool.png";
 import padelImage from "@assets/generated_images/Bali_stone_pool.png";
-import basketballImage from "@assets/generated_images/padel_court.png";
+import basketballImage from "@assets/generated_images/Padel_court.png";
 import outdoorTvImage from "@assets/generated_images/Football_Pitch.png";
 import chefImage from "@assets/generated_images/Basketball_Court.png";
 import gymImage from "@assets/generated_images/Living_Area.png";
@@ -86,7 +86,7 @@ export const galleryImages = [
   },
   {
     src: rooftopImage,
-    caption: "Rooftop terrace with panoramic mountain sunset views"
+    caption: "Enjoy the stunning garden"
   }
 ];
 

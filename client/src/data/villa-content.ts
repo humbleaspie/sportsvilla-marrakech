@@ -321,3 +321,12 @@ export const whatsappConfig = {
   phoneNumber: "+447728586430",
   defaultMessage: "Hi! I saw the Sports Villa online — can I get a quote?"
 };
+
+// ==========================================
+// EMAIL CONFIGURATION
+// ==========================================
+export const emailConfig = {
+  emailAddress: "info@marrakechsportsvilla.com",
+  subject: "Sports Villa Inquiry",
+  defaultMessage: "Hi! I'm interested in booking the Sports Villa. Could you please send me more information and availability?"
+};

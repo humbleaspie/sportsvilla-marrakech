@@ -8,16 +8,16 @@
 // import myImage from "@assets/my-image.jpg";
 
 import heroVideo from "@assets/generated_images/video.mp4";
-import poolImage from "@assets/generated_images/swimming_pool.png";
-import padelImage from "@assets/generated_images/Bali_stone_pool.png";
-import basketballImage from "@assets/generated_images/Padel_court.png";
-import outdoorTvImage from "@assets/generated_images/Football_Pitch.png";
-import chefImage from "@assets/generated_images/Basketball_Court.png";
-import gymImage from "@assets/generated_images/Living_Area.png";
-import spaImage from "@assets/generated_images/Kitchen.png";
-import diningImage from "@assets/generated_images/Bedroom_3.png";
-import loungeImage from "@assets/generated_images/Gym.png";
-import rooftopImage from "@assets/generated_images/Garden_3.png";
+import poolImage from "@assets/generated_images/swimming_pool.webp";
+import padelImage from "@assets/generated_images/Bali_stone_pool.webp";
+import basketballImage from "@assets/generated_images/Padel_court.webp";
+import outdoorTvImage from "@assets/generated_images/Football_Pitch.webp";
+import chefImage from "@assets/generated_images/Basketball_Court.webp";
+import gymImage from "@assets/generated_images/Living_Area.webp";
+import spaImage from "@assets/generated_images/Kitchen.webp";
+import diningImage from "@assets/generated_images/Bedroom_3.webp";
+import loungeImage from "@assets/generated_images/Gym.webp";
+import rooftopImage from "@assets/generated_images/Garden_3.webp";
 
 // ==========================================
 // HERO SECTION
@@ -50,43 +50,63 @@ export const heroContent = {
 export const galleryImages = [
   {
     src: poolImage,
-    caption: "Enjoy your own private Bali stone pool"
+    caption: "Enjoy your own private Bali stone pool",
+    width: 3200,
+    height: 2344
   },
   {
     src: padelImage,
-    caption: "Relax in the heated pool after a padel match"
+    caption: "Relax in the heated pool after a padel match",
+    width: 3200,
+    height: 2344
   },
   {
     src: basketballImage,
-    caption: "Play Padel under the Moroccan sun"
+    caption: "Play Padel under the Moroccan sun",
+    width: 3200,
+    height: 2344
   },
   {
     src: outdoorTvImage,
-    caption: "Train on your own football pitch"
+    caption: "Train on your own football pitch",
+    width: 3200,
+    height: 2344
   },
   {
     src: chefImage,
-    caption: "Shoot hoops on the half basketball court"
+    caption: "Shoot hoops on the half basketball court",
+    width: 3200,
+    height: 2344
   },
   {
     src: gymImage,
-    caption: "Unwind in the spacious living area"
+    caption: "Unwind in the spacious living area",
+    width: 3200,
+    height: 2344
   },
   {
     src: spaImage,
-    caption: "Modern kitchen with all appliances"
+    caption: "Modern kitchen with all appliances",
+    width: 3200,
+    height: 2344
   },
   {
     src: diningImage,
-    caption: "6 stunning double bedrooms for families and groups"
+    caption: "6 stunning double bedrooms for families and groups",
+    width: 3200,
+    height: 2344
   },
   {
     src: loungeImage,
-    caption: "Workout in your home gym before a sunset pool session"
+    caption: "Workout in your home gym before a sunset pool session",
+    width: 3200,
+    height: 2344
   },
   {
     src: rooftopImage,
-    caption: "Enjoy the stunning grounds"
+    caption: "Enjoy the stunning grounds",
+    width: 3200,
+    height: 2344
   }
 ];
 

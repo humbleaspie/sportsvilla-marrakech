@@ -13,19 +13,16 @@
     
     <link rel="icon" type="image/png" href="/favicon.png" />
     
-    <!-- Preconnect for critical resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <!-- Preload critical hero poster for faster LCP -->
     <link rel="preload" as="image" href="/attached_assets/generated_images/video_poster.jpg" fetchpriority="high">
     
-    <!-- Async font loading to eliminate render-blocking -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    </noscript>
+    <!-- Preload critical self-hosted fonts -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-500.woff2" crossorigin>
+    
+    <!-- Self-hosted fonts CSS -->
+    <link rel="stylesheet" href="/fonts/fonts.css">
   </head>
   <body>
     <div id="root"></div>

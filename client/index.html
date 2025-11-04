@@ -16,10 +16,9 @@
     <!-- Preload critical hero poster for faster LCP -->
     <link rel="preload" as="image" href="/attached_assets/generated_images/video_poster.jpg" fetchpriority="high">
     
-    <!-- Async font loading (non-blocking) -->
-    <script>
-      !function(){"use strict";var e=function(e,t,n){var o,i=window.document,s=i.createElement("link");if(t)o=t;else{var r=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=r[r.length-1]}var a=i.styleSheets;if(document.fonts&&document.fonts.load)document.fonts.load("700 1em Playfair Display"),document.fonts.load("400 1em Inter");else{var d=i.createElement("link");d.rel="stylesheet",d.href=e,s.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(s,t?o:o.nextSibling)});var c=function(e){for(var t=s.href,n=a.length;n--;)if(a[n].href===t)return e();setTimeout(function(){c(e)})};s.addEventListener&&s.addEventListener("load",function(){this.media="all"}),s.onloadcssdefined=c,c(function(){s.media!==n&&(s.media=n)}),setTimeout(function(){s.rel="stylesheet",s.href=e})}};e("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap")}();
-    </script>
+    <!-- Async non-blocking font loading with swap for instant text render -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"></noscript>
   </head>
   <body>
     <div id="root"></div>

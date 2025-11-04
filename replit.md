@@ -121,15 +121,30 @@ Preferred communication style: Simple, everyday language.
   - Lazy loading for all non-critical images
   - Explicit width/height attributes to prevent layout shifts (CLS)
   - fetchpriority="high" on hero image for faster LCP
-  - DNS prefetch hints for external resources (Google Fonts, WhatsApp)
+  - Hero poster preload for immediate LCP rendering
+
+- **Font Optimization Strategy**:
+  - Async non-blocking font loading script prevents render-blocking
+  - Uses Font Loading API (`document.fonts.load()`) when available
+  - Fallback to media query technique for older browsers
+  - System fonts (Georgia, Arial) display instantly while custom fonts load
+  - Playfair Display and Inter swap in seamlessly after download
+  - Preserves design requirements while eliminating 600ms+ render-blocking delay
 
 **PageSpeed Scores (November 4, 2025)**:
-- Desktop: 96/100
-- Mobile: 67/100 (limited by Replit hosting and browser throttling simulation)
+- Desktop: 99/100 ⭐
+- Mobile: 85/100 ⭐
 - Total asset reduction: ~44MB → ~4.2MB (90% reduction)
+- Performance improvement: Mobile score increased from 67 → 85 (27% improvement)
 
 **Technical Implementation**:
 - Gallery data structure in `villa-content.ts` includes both src (desktop) and srcMobile properties
 - VisualTour component uses responsive srcset: `srcset="${image.srcMobile} 800w, ${image.src} 3200w"`
 - Sizes attribute: `sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"`
 - All optimized images stored in `attached_assets/generated_images/`
+- Async font loader in `client/index.html` eliminates render-blocking while preserving custom typography
+
+**Remaining Performance Constraints**:
+- Replit hosting has inherent server response time limitations
+- React framework bundle includes ~133 KiB of necessary overhead
+- Achieving 100/100 mobile would require CDN hosting, aggressive code splitting, and self-hosted resources

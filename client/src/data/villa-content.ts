@@ -50,7 +50,7 @@ export const heroContent = {
 export const galleryImages = [
   {
     src: poolImage,
-    caption: "Your own private Bali stone swimming pool"
+    caption: "Enjoy your own private Bali stone pool"
   },
   {
     src: padelImage,
@@ -70,11 +70,11 @@ export const galleryImages = [
   },
   {
     src: gymImage,
-    caption: "Relax in the spacious modern living area"
+    caption: "Unwind in the spacious living area"
   },
   {
     src: spaImage,
-    caption: "Stunning kitchen with all appliances included"
+    caption: "Modern kitchen with all appliances"
   },
   {
     src: diningImage,
@@ -86,7 +86,7 @@ export const galleryImages = [
   },
   {
     src: rooftopImage,
-    caption: "Enjoy the stunning garden"
+    caption: "Enjoy the stunning grounds"
   }
 ];
 
@@ -125,17 +125,17 @@ export const whoThisIsForContent = {
   audiences: [
     {
       title: "5 star sports facilities",
-      description: "Padel court, basketball court, and fully-equipped gym.",
+      description: "Padel & basketball court, football pitch & home gym.",
       icon: "Trophy"
     },
     {
-      title: "Only 20mins from Medina",
+      title: "Only 20/25mins from Medina",
       description: "Close to Marrakech's souks and culture, far enough for privacy.",
       icon: "MapPin"
     },
     {
-      title: "Maid, Cook & 24/7 Security",
-      description: "Fresh breakfast daily, housekeeping, and professional security.",
+      title: "Maid & Cook Included",
+      description: "No stress - let the staff take care of you.",
       icon: "Shield"
     },
     {
@@ -192,7 +192,7 @@ export const ourTeamContent = {
     },
     {
       title: "Best Price Guarantee",
-      description: "Found it cheaper? We'll match it.",
+      description: "Found it cheaper on AIRBNB? We'll match it.",
       icon: "BadgeCheck"
     },
     {
@@ -243,7 +243,7 @@ export const pricingContent = {
   features: [
     "6 double bedrooms",
     "Padel & basketball court",
-    "Heated pool",
+    "Heated pool (optional)",
     "Outdoor TV & Gym",
     "Cook & Maid service",
   ],

@@ -326,7 +326,7 @@ export const whatsappConfig = {
 // EMAIL CONFIGURATION
 // ==========================================
 export const emailConfig = {
-  emailAddress: "info@marrakechsportsvilla.com",
+  emailAddress: "enquiry@vipatmarrakech.com",
   subject: "Sports Villa Inquiry",
   defaultMessage: "Hi! I'm interested in booking the Sports Villa. Could you please send me more information and availability?"
 };

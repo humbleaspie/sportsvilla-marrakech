@@ -10,14 +10,14 @@
 import heroVideo from "@assets/generated_images/video.mp4";
 import poolImage from "@assets/generated_images/swimming_pool.png";
 import padelImage from "@assets/generated_images/Bali_stone_pool.png";
-import basketballImage from "@assets/generated_images/Basketball_court_dramatic_lighting_3860707c.png";
-import outdoorTvImage from "@assets/generated_images/Outdoor_TV_entertainment_area_b52a60cb.png";
-import chefImage from "@assets/generated_images/Private_chef_plating_gourmet_103305f4.png";
-import gymImage from "@assets/generated_images/Luxury_home_gym_equipment_91ef8979.png";
-import spaImage from "@assets/generated_images/Moroccan_spa_wellness_area_51eb9dac.png";
-import diningImage from "@assets/generated_images/Outdoor_dining_terrace_setup_b6468dbc.png";
-import loungeImage from "@assets/generated_images/Modern_villa_living_lounge_848444ab.png";
-import rooftopImage from "@assets/generated_images/Rooftop_terrace_mountain_views_b408a868.png";
+import basketballImage from "@assets/generated_images/padel_court.png";
+import outdoorTvImage from "@assets/generated_images/Football_Pitch.png";
+import chefImage from "@assets/generated_images/Living_Area.png";
+import gymImage from "@assets/generated_images/Kitchen.png";
+import spaImage from "@assets/generated_images/Bedroom_2.png";
+import diningImage from "@assets/generated_images/Bedroom_3.png";
+import loungeImage from "@assets/generated_images/Gym.png";
+import rooftopImage from "@assets/generated_images/Garden_3.png";
 
 // ==========================================
 // HERO SECTION

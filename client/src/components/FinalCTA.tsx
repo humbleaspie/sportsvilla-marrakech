@@ -17,7 +17,7 @@ export default function FinalCTA() {
         <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-6 text-foreground">
           Ready to Book?
         </h2>
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
           <Button 
             asChild 
             size="lg"
@@ -29,16 +29,18 @@ export default function FinalCTA() {
               Get Quote Via WhatsApp
             </a>
           </Button>
-          <div className="text-sm md:text-base text-muted-foreground">
-            Not ready to chat? Email us at{" "}
-            <a 
-              href={emailLink}
-              className="text-foreground underline hover:text-primary transition-colors"
-              data-testid="link-email"
-            >
-              {emailConfig.emailAddress}
+          <Button 
+            asChild 
+            size="lg"
+            variant="outline"
+            className="text-sm md:text-base px-6 md:px-8 w-full sm:w-auto"
+            data-testid="button-email-cta"
+          >
+            <a href={emailLink}>
+              <Mail className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+              Not ready to chat? Email us
             </a>
-          </div>
+          </Button>
         </div>
       </div>
     </section>

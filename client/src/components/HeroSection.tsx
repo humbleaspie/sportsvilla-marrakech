@@ -23,8 +23,16 @@ export default function HeroSection() {
 
   const toggleMute = () => {
     if (videoRef.current) {
-      videoRef.current.muted = !videoRef.current.muted;
-      setIsMuted(!isMuted);
+      const willBeMuted = !videoRef.current.muted;
+      videoRef.current.muted = willBeMuted;
+      setIsMuted(willBeMuted);
+      
+      // When unmuting, ensure the video is playing
+      if (!willBeMuted) {
+        videoRef.current.play().catch(() => {
+          // Play was prevented, silently fail
+        });
+      }
     }
   };
 

@@ -1,10 +1,9 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Users, Home, Volume2, VolumeX } from "lucide-react";
+import { MapPin, Users, Home } from "lucide-react";
 import { heroContent, whatsappConfig } from "@/data/villa-content";
 
 export default function HeroSection() {
-  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
   
   const whatsappNumber = whatsappConfig.phoneNumber;
@@ -20,21 +19,6 @@ export default function HeroSection() {
       });
     }
   }, []);
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      const willBeMuted = !videoRef.current.muted;
-      videoRef.current.muted = willBeMuted;
-      setIsMuted(willBeMuted);
-      
-      // When unmuting, ensure the video is playing
-      if (!willBeMuted) {
-        videoRef.current.play().catch(() => {
-          // Play was prevented, silently fail
-        });
-      }
-    }
-  };
 
   return (
     <section className="relative h-[70vh] md:h-[75vh] lg:h-[80vh] w-full overflow-hidden">
@@ -54,20 +38,6 @@ export default function HeroSection() {
             <source src={heroContent.videoUrl} type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/25 to-transparent" />
-          
-          {/* Mute/Unmute Button */}
-          <button
-            onClick={toggleMute}
-            className="absolute top-6 right-6 z-20 bg-black/50 hover:bg-black/70 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-200 hover:scale-110"
-            aria-label={isMuted ? "Unmute video" : "Mute video"}
-            data-testid="button-video-mute"
-          >
-            {isMuted ? (
-              <VolumeX className="w-6 h-6" />
-            ) : (
-              <Volume2 className="w-6 h-6" />
-            )}
-          </button>
         </div>
       ) : (
         <div 

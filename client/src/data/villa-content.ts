@@ -47,7 +47,7 @@ export const heroContent = {
   description: "",
   
   badges: [
-    { text: "Basketball, Football, Gym, Outdoor Tv", icon: "Dumbbell" },
+    { text: "Basketball, Football, Gym", icon: "Dumbbell" },
     { text: "Sleeps 12", icon: "Users" },
     { text: "From £600/night", icon: "Home" }
   ],

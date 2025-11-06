@@ -4,7 +4,7 @@ import { storage } from "./storage";
 import { insertEnquirySchema } from "@shared/schema";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Enquiry submission endpoint
@@ -14,7 +14,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       const enquiry = await storage.createEnquiry(validatedData);
       
-      if (process.env.RESEND_API_KEY && process.env.NOTIFICATION_EMAIL) {
+      if (resend && process.env.NOTIFICATION_EMAIL) {
         try {
           await resend.emails.send({
             from: 'Villa Enquiries <onboarding@resend.dev>',

@@ -104,6 +104,9 @@ Preferred communication style: Simple, everyday language.
   - Desktop devices (>768px): 3200px width WebP images
   - Implemented via srcset and sizes attributes in VisualTour component
   - Mobile images reduce download size by ~75% compared to desktop versions
+  - **LCP Priority Fix**: All gallery images set to loading="lazy" and fetchpriority="low"
+    - Ensures only hero poster video competes for LCP bandwidth
+    - Resolves "LCP request discovery" PageSpeed warnings
 
 - **Image Format Optimization**: 
   - Converted all gallery images from PNG to WebP format
@@ -133,11 +136,18 @@ Preferred communication style: Simple, everyday language.
   - Preserves design requirements while eliminating 600ms+ render-blocking delay
 
 **JavaScript Bundle Optimization (November 6, 2025)**:
-- **Lazy Loading Removed**: Initially attempted selective lazy loading of VisualTour and TestimonialsSection
+- **Contact Form Lazy Loading with IntersectionObserver** (ACTIVE):
+  - ContactForm component now loads only when user scrolls within 200px of contact section
+  - Defers ~108 KiB of unused JavaScript (react-hook-form, Zod, TanStack Query, shadcn Form components)
+  - Placeholder Card with min-h-[400px] prevents layout shifts
+  - Rationale: Contact form at bottom of page, heavy dependencies not needed for initial render
+  - Expected impact: Eliminates "Reduce unused JavaScript: 108 KiB" PageSpeed warning
+
+- **Previous Attempt - Gallery/Testimonials Lazy Loading** (REVERTED):
+  - Initially attempted selective lazy loading of VisualTour and TestimonialsSection
   - REVERTED: Lazy loading caused 5-point performance regression (76→71/100 mobile)
   - REVERTED: Broke anchor navigation to #gallery and #testimonials sections
   - Root cause: Deferred components caused layout shifts, extended LCP, and navigation failures
-  - Decision: Focus on other optimizations instead of code splitting
   
 - **Optimized Hero Video Loading**:
   - Hero video uses preload="metadata" (loads only metadata, not full 1.2MB file)

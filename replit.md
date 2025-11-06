@@ -133,11 +133,11 @@ Preferred communication style: Simple, everyday language.
   - Preserves design requirements while eliminating 600ms+ render-blocking delay
 
 **JavaScript Bundle Optimization (November 6, 2025)**:
-- **Selective Code Splitting with React Lazy Loading**: 
-  - Only the heaviest carousel-based components are lazy loaded: VisualTour and TestimonialsSection
-  - Lightweight components (WhoThisIsFor, PricingSection, etc.) remain in the main bundle
-  - Uses individual Suspense boundaries for each lazy component to prevent blocking
-  - Rationale: Blanket lazy loading caused performance regression due to increased network RTTs (+400ms Total Blocking Time)
+- **Lazy Loading Removed**: Initially attempted selective lazy loading of VisualTour and TestimonialsSection
+  - REVERTED: Lazy loading caused 5-point performance regression (76→71/100 mobile)
+  - REVERTED: Broke anchor navigation to #gallery and #testimonials sections
+  - Root cause: Deferred components caused layout shifts, extended LCP, and navigation failures
+  - Decision: Focus on other optimizations instead of code splitting
   
 - **Optimized Hero Video Loading**:
   - Hero video uses preload="metadata" (loads only metadata, not full 1.2MB file)

@@ -161,7 +161,7 @@ export const testimonials = [
 // WHY THIS VILLA SECTION
 // ==========================================
 export const whoThisIsForContent = {
-  sectionTitle: "Why Book This Villa?",
+  sectionTitle: "Why this is our No.1 Villa",
   sectionSubtitle: "Everything you need for an unforgettable Marrakech experience",
   
   audiences: [

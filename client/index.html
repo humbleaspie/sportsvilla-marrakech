@@ -13,16 +13,27 @@
     
     <link rel="icon" type="image/png" href="/favicon.png" />
     
+    <!-- Preconnect to external domains for faster resource loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
     <!-- Preload critical hero poster for faster LCP -->
     <link rel="preload" as="image" href="/attached_assets/generated_images/video_poster.jpg" fetchpriority="high">
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-930043638"></script>
+    <!-- Google tag (gtag.js) - Deferred for better performance -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-930043638');
+      
+      // Load Google Analytics script after page load
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-930043638';
+        document.head.appendChild(script);
+      });
     </script>
     
     <!-- Async font loading (non-blocking) -->

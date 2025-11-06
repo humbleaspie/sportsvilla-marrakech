@@ -173,10 +173,10 @@ Preferred communication style: Simple, everyday language.
 - Async font loader in `client/index.html` eliminates render-blocking while preserving custom typography
 
 **Additional Performance Optimizations (November 6, 2025)**:
-- **Self-hosted WOFF2 fonts**: Eliminated Google Fonts dependency, reduced font payload by 90% (1.1MB → 95KB)
-  - Downloaded optimized WOFF2 variants (latin subset only) from Fontsource CDN
-  - Preloaded critical fonts (Inter 400, Playfair Display 700) for instant rendering
+- **Self-hosted TTF fonts**: Migrated from Google Fonts CDN to local TTF files
+  - Preloaded critical fonts (Inter 400, Playfair Display 700) for faster loading
   - Maintained font-display: swap for optimal fallback behavior
+  - Note: WOFF2 optimization was tested but caused performance regression (83 → 59/100) and was rolled back
   
 - **Improved script deferral**: Google Ads now loads via requestIdleCallback instead of window load event
   - Reduces main-thread blocking by ~150ms
@@ -184,9 +184,9 @@ Preferred communication style: Simple, everyday language.
   
 - **CSS containment**: Applied content-visibility: auto to below-fold sections
   - Browser skips rendering off-screen content, improving initial paint
-  - Removed contain-intrinsic-size to prevent layout shifts (CLS)
+  - contain-intrinsic-size: auto 500px provides placeholder sizing
   
-**Expected Mobile Score**: 87-89/100 (from current 83/100)
+**Current Mobile Score**: 83/100
 
 **Remaining Performance Constraints**:
 - Replit hosting has inherent server response time limitations

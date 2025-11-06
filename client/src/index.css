@@ -319,5 +319,6 @@
   /* CSS Containment for performance optimization */
   .below-fold-section {
     content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
   }
 }

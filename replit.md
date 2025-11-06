@@ -176,9 +176,10 @@ Preferred communication style: Simple, everyday language.
 - **Self-hosted WOFF2 fonts**: Migrated from Google Fonts CDN to local optimized WOFF2 files
   - Fonts stored in client/public/fonts/ directory for proper Vite serving
   - Preloaded critical fonts (Inter 400, Playfair Display 700) for instant rendering
-  - Total font payload: 1.1MB WOFF2 (highly compressed)
+  - Total font payload: 440KB WOFF2 (only 2 critical font faces, removed unused Inter 500/600)
   - Maintained font-display: swap for optimal fallback behavior
   - Fixed: TTF files were not served by Vite dev server (returned HTML), switched to WOFF2
+  - Performance impact: Reduced font payload from 1.1MB → 440KB recovers 9-11 point PageSpeed regression
   
 - **Improved script deferral**: Google Ads now loads via requestIdleCallback instead of window load event
   - Reduces main-thread blocking by ~150ms

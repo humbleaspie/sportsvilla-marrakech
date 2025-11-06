@@ -1,11 +1,13 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Users, Home } from "lucide-react";
+import { MapPin, Users, Home, Play } from "lucide-react";
 import { heroContent, whatsappConfig } from "@/data/villa-content";
 import { trackWhatsAppClick } from "@/lib/tracking";
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [showPlayButton, setShowPlayButton] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
   
   const whatsappNumber = whatsappConfig.phoneNumber;
   const whatsappMessage = encodeURIComponent(whatsappConfig.defaultMessage);
@@ -15,16 +17,67 @@ export default function HeroSection() {
     trackWhatsAppClick('hero_section');
   };
 
-  // Ensure video autoplays on mount (fallback for some browsers)
+  // Attempt autoplay, show button if blocked
   useEffect(() => {
     const video = videoRef.current;
+    if (!video) return;
+
+    let retryCount = 0;
+    const maxRetries = 3;
+
+    // Ensure video is muted for autoplay
+    video.muted = true;
+    video.setAttribute('muted', '');
+    video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
+
+    // Function to attempt playback
+    const attemptPlay = () => {
+      const playPromise = video.play();
+      
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            console.log('Video autoplay successful');
+            setIsPlaying(true);
+            setShowPlayButton(false);
+          })
+          .catch((error) => {
+            console.log('Autoplay blocked:', error.name);
+            retryCount++;
+            
+            if (retryCount >= maxRetries) {
+              // Show play button after max retries
+              setShowPlayButton(true);
+              console.log('Showing manual play button');
+            } else {
+              // Retry a few times
+              setTimeout(attemptPlay, 1000);
+            }
+          });
+      }
+    };
+
+    // Try to play after a short delay
+    const timer = setTimeout(attemptPlay, 100);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+  const handleManualPlay = () => {
+    const video = videoRef.current;
     if (video) {
-      // Some browsers need explicit play() call
-      video.play().catch(() => {
-        // Autoplay blocked - user will see poster
+      video.muted = true;
+      video.play().then(() => {
+        setIsPlaying(true);
+        setShowPlayButton(false);
+      }).catch((error) => {
+        console.error('Manual play failed:', error);
       });
     }
-  }, []);
+  };
 
   return (
     <section id="home" className="relative h-[70vh] md:h-[75vh] lg:h-[80vh] w-full overflow-hidden">
@@ -44,6 +97,22 @@ export default function HeroSection() {
             <source src={heroContent.videoUrl} type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/25 to-transparent" />
+          
+          {/* Play Button Overlay - Shows when autoplay is blocked */}
+          {showPlayButton && !isPlaying && (
+            <div className="absolute inset-0 flex items-center justify-center z-20">
+              <Button
+                onClick={handleManualPlay}
+                size="lg"
+                variant="default"
+                className="bg-white/90 hover:bg-white text-black backdrop-blur-md shadow-2xl"
+                data-testid="button-play-video"
+              >
+                <Play className="w-6 h-6 mr-2" />
+                Play Video
+              </Button>
+            </div>
+          )}
         </div>
       ) : (
         <div 

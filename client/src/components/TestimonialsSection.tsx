@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Quote } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 import { testimonials, testimonialsContent } from "@/data/villa-content";
 
 export default function TestimonialsSection() {
@@ -35,6 +35,11 @@ export default function TestimonialsSection() {
                 </Avatar>
                 <div>
                   <p className="font-semibold text-[9px] md:text-base text-card-foreground">{testimonial.name}</p>
+                  <div className="flex gap-0.5 my-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-2 h-2 md:w-3 md:h-3 fill-primary text-primary" />
+                    ))}
+                  </div>
                   <p className="text-[8px] md:text-sm text-muted-foreground">{testimonial.location}</p>
                 </div>
               </div>

@@ -15,19 +15,13 @@ export default function HeroSection() {
     trackWhatsAppClick('hero_section');
   };
 
-  // Load and play video AFTER initial render (after LCP)
+  // Load video AFTER initial render to prioritize poster for LCP
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      // Delay video loading until after LCP to prioritize poster
-      const timer = setTimeout(() => {
-        video.preload = "auto";
-        video.load();
-        video.play().catch(() => {
-          // Autoplay was prevented, silently fail
-        });
-      }, 100);
-      return () => clearTimeout(timer);
+      // Immediately trigger video loading after mount (poster already rendered)
+      video.preload = "auto";
+      video.load();
     }
   }, []);
 
@@ -38,6 +32,7 @@ export default function HeroSection() {
         <div className="absolute inset-0">
           <video
             ref={videoRef}
+            autoPlay
             loop
             muted
             playsInline

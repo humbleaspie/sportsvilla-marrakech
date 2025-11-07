@@ -25,10 +25,14 @@ Preferred communication style: Simple, everyday language.
     - **Core Web Vitals**: Achieved excellent TBT (0ms) and CLS (0), with LCP and FCP optimized as much as possible given hosting constraints.
 
 ### Backend
-- **Server Framework**: Express.js with Node.js and TypeScript.
+- **Server Framework**: Express.js with Node.js and TypeScript (for Replit development).
 - **Development**: Vite middleware integration for HMR.
-- **API**: Minimal RESTful API, primarily serving static content.
-- **Build Process**: Vite for frontend, esbuild for backend, with a single command for production builds serving static files.
+- **API**: Minimal RESTful API with single `/api/enquiries` endpoint for contact form submissions.
+- **Build Process**: Vite for frontend (`dist/public`), esbuild for backend.
+- **Cloudflare Pages Deployment**: Ready for deployment with Cloudflare Pages Functions replacing Express backend.
+  - Contact form API migrated to Cloudflare Worker (`functions/api/enquiries.ts`)
+  - Uses Resend API for email notifications
+  - Full deployment instructions in `CLOUDFLARE_DEPLOYMENT.md`
 
 ### Data Storage
 - **Current**: In-memory storage (`MemStorage`) for rapid development.

@@ -286,8 +286,8 @@ export const pricingContent = {
     "6 double bedrooms",
     "Padel & basketball Court",
     "Bali stone pool (heating optional)",
-    "Football Pitch, Gym",
-    "Outdoor TV & Fire Pit",
+    "Football Pitch",
+    "Outdoor TV & Gym",
     "Cook & Maid service (included)",
   ],
   

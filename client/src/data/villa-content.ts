@@ -283,11 +283,12 @@ export const pricingContent = {
   ],
   
   features: [
-    "6 double bedrooms",
-    "Padel & basketball court",
-    "Heated pool (optional)",
-    "Outdoor TV & Gym",
-    "Cook & Maid service",
+    "6 double ensuite bedrooms",
+    "Padel & basketball Court",
+    "Bali stone pool (heating optional)",
+    "Football Pitch, Gym",
+    "Outdoor TV & Fire Pit",
+    "Cook & Maid service (included)",
   ],
   
   badges: [

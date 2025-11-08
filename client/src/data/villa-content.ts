@@ -42,7 +42,7 @@ export const heroContent = {
   // IMAGE OPTION: Used when videoUrl is empty (not used when video is set)
   backgroundImage: "",
   
-  title: "Your Private Sports Retreat in Marrakech",
+  title: "Marrakech's No.1 6 Bed Luxury Sports Villa",
   subtitle: "6-Bed Luxury Villa • Heated Pool • Private Padel Court",
   description: "",
   

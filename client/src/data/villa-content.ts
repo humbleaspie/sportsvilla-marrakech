@@ -238,8 +238,8 @@ export const ourTeamContent = {
       icon: "BadgeCheck"
     },
     {
-      title: "Trusted by 150+ UK groups each year – your dream villa in Marrakech awaits",
-      description: "",
+      title: "Trusted by 1000+ Guests",
+      description: "5-star reviews and repeat bookings.",
       icon: "Star"
     }
   ]

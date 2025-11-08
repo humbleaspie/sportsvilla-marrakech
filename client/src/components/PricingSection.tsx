@@ -30,7 +30,7 @@ export default function PricingSection() {
           <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-2 text-card-foreground">
             {pricingContent.sectionTitle}
           </h2>
-          <h3 className="text-sm md:text-lg lg:text-xl font-medium text-card-foreground mt-1 md:mt-2 whitespace-pre-line">
+          <h3 className="text-xs md:text-base lg:text-lg font-medium text-card-foreground mt-1 md:mt-2 whitespace-pre-line">
             Autumn Sale – Save £150/Night{'\n'}Limited Dates Available – Book Direct & Save
           </h3>
         </div>

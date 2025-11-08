@@ -32,7 +32,7 @@ export default function PricingSection() {
           </h2>
           <Badge variant="default" className="mt-1 md:mt-2 text-xs">
             <Sparkles className="w-3 h-3 mr-1" />
-            Save £150/night
+            Save £150/night - limited time only
           </Badge>
         </div>
         

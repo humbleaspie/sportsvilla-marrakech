@@ -27,7 +27,7 @@ export default function PricingSection() {
     <section id="pricing" className="pt-2 pb-6 md:pt-3 md:pb-10 lg:pt-3 lg:pb-12 bg-card below-fold-section">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="text-center mb-3 md:mb-6">
-          <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-2 text-card-foreground whitespace-pre-line">
+          <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-2 text-card-foreground">
             {pricingContent.sectionTitle}
           </h2>
           <Badge variant="default" className="mt-1 md:mt-2 text-xs">

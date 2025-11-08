@@ -1,29 +1,19 @@
-import { lazy, Suspense, useEffect, useState, useRef } from "react";
-import { Card } from "@/components/ui/card";
-import { Loader2 } from "lucide-react";
-
-const ContactForm = lazy(() => import("@/components/ContactForm"));
+import { useEffect, useRef } from "react";
 
 export default function ContactFormSection() {
-  const [shouldLoad, setShouldLoad] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setShouldLoad(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "200px" }
-    );
+    const script = document.createElement('script');
+    script.innerHTML = `var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}`;
+    document.body.appendChild(script);
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
+    return () => {
+      const existingScript = document.querySelector('script[src="https://tally.so/widgets/embed.js"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
   }, []);
 
   return (
@@ -42,17 +32,19 @@ export default function ContactFormSection() {
           </p>
         </div>
         
-        {shouldLoad ? (
-          <Suspense fallback={
-            <Card className="p-8 flex items-center justify-center min-h-[400px]">
-              <Loader2 className="w-8 h-8 animate-spin text-primary" />
-            </Card>
-          }>
-            <ContactForm />
-          </Suspense>
-        ) : (
-          <Card className="p-8 min-h-[400px]" />
-        )}
+        <div className="rounded-lg overflow-hidden shadow-sm">
+          <iframe 
+            data-tally-src="https://tally.so/embed/VLE4Za?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+            loading="lazy" 
+            width="100%" 
+            height="542" 
+            frameBorder="0" 
+            marginHeight={0} 
+            marginWidth={0} 
+            title="Villa Marrakech Enquiry"
+            data-testid="form-tally-contact"
+          />
+        </div>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 #!/bin/bash
-# Push latest form fixes to GitHub for Cloudflare deployment
+# Push Tally.so contact form integration to GitHub for Cloudflare deployment
 
-echo "🚀 Pushing latest code to GitHub..."
+echo "🚀 Pushing Tally.so form integration to GitHub..."
 echo ""
 
 # Remove any lock file
@@ -11,11 +11,11 @@ rm -f .git/index.lock
 git add -A
 
 # Commit with a clear message
-git commit -m "Push latest form fixes and SEO updates to production"
+git commit -m "Replace contact form with Tally.so - no API keys needed"
 
 # Push to GitHub
 git push origin main
 
 echo ""
 echo "✅ Done! Cloudflare will rebuild in 2-3 minutes."
-echo "The form should work after the deployment completes!"
+echo "The Tally.so form will be live on your site!"

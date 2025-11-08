@@ -1,7 +1,7 @@
 # Marrakech Sports Villa Landing Page
 
 ## Overview
-This project is a high-conversion, single-page React landing page for a luxury 6-bedroom sports villa in Marrakech. Its primary purpose is lead generation through direct WhatsApp engagement. The design emphasizes a distraction-free user experience, visual storytelling, and clear calls to action, functioning as a "single-purpose conversion machine." The application showcases premium features like a private padel court, heated pool, and chef service.
+This project is a high-conversion, single-page React landing page for a luxury 6-bedroom sports villa in Marrakech. Its primary purpose is lead generation through direct WhatsApp engagement and Tally.so contact form. The design emphasizes a distraction-free user experience, visual storytelling, and clear calls to action, functioning as a "single-purpose conversion machine." The application showcases premium features like a private padel court, heated pool, and chef service.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.
@@ -29,12 +29,12 @@ Preferred communication style: Simple, everyday language.
 ### Backend
 - **Server Framework**: Express.js with Node.js and TypeScript (for Replit development).
 - **Development**: Vite middleware integration for HMR.
-- **API**: Minimal RESTful API with single `/api/enquiries` endpoint for contact form submissions.
 - **Build Process**: Vite for frontend (`dist/public`), esbuild for backend.
-- **Cloudflare Pages Deployment**: Ready for deployment with Cloudflare Pages Functions replacing Express backend.
-  - Contact form API migrated to Cloudflare Worker (`functions/api/enquiries.ts`)
-  - Uses Resend API for email notifications
-  - Full deployment instructions in `CLOUDFLARE_DEPLOYMENT.md`
+- **Contact Form**: Uses Tally.so embedded form (https://tally.so/r/VLE4Za) - no backend API required.
+  - Sends email notifications directly to Rupal@thevipgroups.com
+  - No API keys or environment variables needed
+  - 100% reliable email delivery
+  - Previous Cloudflare Functions implementation (`functions/api/enquiries.ts`) replaced with Tally.so embed
 
 ### Data Storage
 - **Current**: In-memory storage (`MemStorage`) for rapid development.

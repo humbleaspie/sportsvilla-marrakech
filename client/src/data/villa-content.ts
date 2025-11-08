@@ -43,7 +43,7 @@ export const heroContent = {
   backgroundImage: "",
   
   title: "Marrakech's No.1 6 Bed Luxury Sports Villa",
-  subtitle: "6-Bed Luxury Villa • Heated Pool • Private Padel Court",
+  subtitle: "Sleeps 12 • Heated Pool • Private Padel Court • Fully Staffed\n⚡ Autumn Sale – Save £150/night This Week!",
   description: "",
   
   badges: [

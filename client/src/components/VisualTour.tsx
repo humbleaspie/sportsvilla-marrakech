@@ -31,7 +31,7 @@ export default function VisualTour() {
           <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-2 text-foreground">
             {visualTourContent.sectionTitle}
           </h2>
-          <p className="text-xs md:text-base text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xs md:text-base text-muted-foreground max-w-2xl mx-auto whitespace-pre-line">
             {visualTourContent.sectionSubtitle}
           </p>
         </div>

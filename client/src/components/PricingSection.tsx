@@ -69,7 +69,7 @@ export default function PricingSection() {
         </div>
         
         <Card className="p-3 md:p-8 border-2 border-primary/20">
-          <div className="space-y-1 md:space-y-2 mb-2 md:mb-4">
+          <div className="space-y-2 md:space-y-3 mb-2 md:mb-4">
             {pricingContent.features.map((feature, index) => (
               <div key={index} className="flex items-start gap-1.5 md:gap-2">
                 <Check className="w-3 h-3 md:w-4 md:h-4 text-primary flex-shrink-0 mt-0.5 md:mt-1" />

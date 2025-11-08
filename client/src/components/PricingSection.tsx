@@ -24,7 +24,7 @@ export default function PricingSection() {
   };
 
   return (
-    <section id="pricing" className="pt-3 pb-6 md:pt-5 md:pb-10 lg:pt-6 lg:pb-12 bg-card below-fold-section">
+    <section id="pricing" className="pt-2 pb-6 md:pt-3 md:pb-10 lg:pt-3 lg:pb-12 bg-card below-fold-section">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="text-center mb-3 md:mb-6">
           <h2 className="font-serif text-xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-2 text-card-foreground">

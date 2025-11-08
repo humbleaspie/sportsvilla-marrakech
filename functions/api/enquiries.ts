@@ -116,7 +116,7 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            from: 'Villa Enquiries <onboarding@resend.dev>',
+            from: 'Villa Enquiries <enquiries@vipatmarrakech.com>',
             to: context.env.NOTIFICATION_EMAIL,
             subject: `New Villa Enquiry from ${escapedName}`,
             html: `

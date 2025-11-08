@@ -234,7 +234,7 @@ export const ourTeamContent = {
     },
     {
       title: "Best Price Guarantee",
-      description: "Found it cheaper on AIRBNB? We'll match it.",
+      description: "Found it cheaper online? We'll match the price.",
       icon: "BadgeCheck"
     },
     {

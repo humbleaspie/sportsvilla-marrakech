@@ -125,28 +125,13 @@
     <!-- Preload critical hero poster for faster LCP -->
     <link rel="preload" as="image" href="/attached_assets/generated_images/video_poster.jpg" fetchpriority="high">
     
-    <!-- Google tag (gtag.js) - Deferred with requestIdleCallback for better performance -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-930043638"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-930043638');
-      
-      // Load Google Analytics script when browser is idle
-      (function() {
-        var loadGtag = function() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-930043638';
-          document.head.appendChild(script);
-        };
-        
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(loadGtag, { timeout: 2000 });
-        } else {
-          setTimeout(loadGtag, 1000);
-        }
-      })();
     </script>
   </head>
   <body>

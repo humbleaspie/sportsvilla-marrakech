@@ -1,4 +1,21 @@
+import { useEffect } from "react";
+
 export default function TallyFormSection() {
+  useEffect(() => {
+    // Load Tally embed script
+    const script = document.createElement('script');
+    script.src = 'https://tally.so/widgets/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup: remove script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <section 
       id="contact" 
@@ -27,7 +44,6 @@ export default function TallyFormSection() {
             className="rounded-lg"
             data-testid="tally-form-iframe"
           ></iframe>
-          <script async src="https://tally.so/widgets/embed.js"></script>
         </div>
       </div>
     </section>

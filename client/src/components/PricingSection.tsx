@@ -93,14 +93,14 @@ export default function PricingSection() {
             <Button 
               asChild
               size="default"
-              className="flex-1 text-xs md:text-base"
+              className="w-full text-xs md:text-base"
               data-testid="button-whatsapp-pricing"
             >
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
                 Check Dates & Lock £150/Night Discount
               </a>
             </Button>
-            <Button 
+            {/* <Button 
               asChild
               size="default"
               variant="secondary"
@@ -110,7 +110,7 @@ export default function PricingSection() {
               <a href="#book">
                 Fill In A Enquiry Form
               </a>
-            </Button>
+            </Button> */}
           </div>
           
           <p className="text-center text-[10px] md:text-sm text-muted-foreground mt-2 md:mt-3">

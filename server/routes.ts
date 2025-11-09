@@ -17,7 +17,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (resend && process.env.NOTIFICATION_EMAIL) {
         try {
           await resend.emails.send({
-            from: 'Villa Enquiries <onboarding@resend.dev>',
+            from: 'Villa Enquiries <enquiries@vipatmarrakech.com>',
             to: process.env.NOTIFICATION_EMAIL,
             subject: `New Villa Enquiry from ${validatedData.name}`,
             html: `

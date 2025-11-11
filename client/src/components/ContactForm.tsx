@@ -34,6 +34,7 @@ export default function ContactForm() {
       // Track form submission conversion
       if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
         (window as any).gtag_report_conversion();
+        console.log('Form conversion tracked');
       }
       
       setIsSubmitted(true);

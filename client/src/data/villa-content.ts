@@ -52,7 +52,7 @@ export const heroContent = {
   description: "",
   
   badges: [
-    { text: "⚡ Autumn Sale – Save £150/night This Week!", icon: "" }
+    { text: "⚡ Autumn Sale – Save £150/night ⚡", icon: "" }
   ],
   
   ctaText: "Get Instant Quote Via WhatsApp"

@@ -2,17 +2,14 @@ declare global {
   interface Window {
     dataLayer: any[];
     gtag: (...args: any[]) => void;
+    gtag_report_conversion_whatsapp: (url?: string) => boolean;
   }
 }
 
 export const trackWhatsAppClick = (location: string) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'conversion', {
-      'send_to': 'AW-930043638',
-      'event_category': 'engagement',
-      'event_label': `whatsapp_click_${location}`,
-    });
-    
-    console.log(`WhatsApp click tracked from: ${location}`);
+  // Call the Google Ads WhatsApp conversion tracking function
+  if (typeof window !== 'undefined' && window.gtag_report_conversion_whatsapp) {
+    window.gtag_report_conversion_whatsapp();
+    console.log(`WhatsApp conversion tracked from: ${location}`);
   }
 };

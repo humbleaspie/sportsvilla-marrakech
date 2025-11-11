@@ -151,6 +151,24 @@
         return false;
       }
     </script>
+    
+    <!-- Event snippet for Contact (1) WhatsApp conversion -->
+    <script>
+      function gtag_report_conversion_whatsapp(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-930043638/3Ml5CJnp_70bEPatvbsD',
+            'value': 1.0,
+            'currency': 'GBP',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

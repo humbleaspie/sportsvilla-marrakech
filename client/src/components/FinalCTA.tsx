@@ -21,7 +21,7 @@ export default function FinalCTA() {
         <Button 
           asChild 
           size="lg"
-          className="text-sm md:text-base px-6 md:px-8"
+          className="text-sm md:text-base px-6 md:px-8 bg-[#25D366] hover:bg-[#20BD5A] text-white border-[#25D366]"
           data-testid="button-final-cta"
         >
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>

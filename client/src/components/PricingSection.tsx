@@ -107,7 +107,7 @@ export default function PricingSection() {
               data-testid="button-enquiry-form-pricing"
             >
               <a href="#contact">
-                Like other villa options? Fill in form.
+                Want to see other options? Fill in form.
               </a>
             </Button>
           </div>

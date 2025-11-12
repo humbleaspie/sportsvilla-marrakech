@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState, useRef } from "react";
 import HeroSection from "@/components/HeroSection";
 import VisualTour from "@/components/VisualTour";
+import FeaturedReview from "@/components/FeaturedReview";
 import WhoThisIsFor from "@/components/WhoThisIsFor";
 import PricingSection from "@/components/PricingSection";
 import OurTeamSection from "@/components/OurTeamSection";
@@ -52,6 +53,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <HeroSection />
       <VisualTour />
+      <FeaturedReview />
       <PricingSection />
       {/* <WhoThisIsFor /> */}
       <OurTeamSection />

@@ -55,7 +55,7 @@ export const heroContent = {
     { text: "⚡ Autumn Sale – Save £150/night ⚡", icon: "" }
   ],
   
-  ctaText: "Get Instant Quote Via WhatsApp"
+  ctaText: "Check Dates & Get Instant Quote"
 };
 
 // ==========================================

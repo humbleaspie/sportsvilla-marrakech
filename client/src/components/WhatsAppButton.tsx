@@ -38,7 +38,7 @@ export default function WhatsAppButton() {
             }`}
           >
             <span className="text-sm font-semibold whitespace-nowrap">
-              Chat to our team
+              Check Dates & Get Instant Quote
             </span>
           </div>
         </div>

@@ -10,7 +10,7 @@ import { seoContent } from "./seo-content";
 // To add your own images: Place them in the 'attached_assets' folder and import like this:
 // import myImage from "@assets/my-image.jpg";
 
-import heroVideo from "@assets/generated_images/hero_video_new.mp4";
+import heroVideo from "@assets/generated_images/hero_video_optimized.mp4";
 import heroPoster from "@assets/generated_images/hero_video_poster_new.jpg";
 import poolImage from "@assets/generated_images/swimming_pool.webp";
 import poolImageMobile from "@assets/generated_images/swimming_pool_mobile.webp";

@@ -306,7 +306,7 @@ export const pricingContent = {
 // VISUAL TOUR SECTION
 // ==========================================
 export const visualTourContent = {
-  sectionTitle: "Experience Luxury at Every Turn",
+  sectionTitle: "Play, Relax, Repeat",
   sectionSubtitle: "Sunrise workouts. Sunset swims. Marrakech's Only sport villa for 12 guests - with a private padel court, heated pool, and pure luxury at every turn."
 };
 

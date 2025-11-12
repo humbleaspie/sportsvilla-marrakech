@@ -128,7 +128,7 @@ export default function HeroSection() {
         {/* Centered Title */}
         <div className="flex-1 flex items-center justify-center text-center">
           <div>
-            <h1 className="font-sans font-bold text-base md:text-2xl lg:text-3xl text-white leading-tight drop-shadow-lg">
+            <h1 className="font-luxury font-bold text-base md:text-2xl lg:text-3xl text-white leading-tight drop-shadow-lg tracking-wide">
               {heroContent.title}
             </h1>
             <p className="text-xs md:text-sm lg:text-base text-white/90 mt-1 drop-shadow-md whitespace-pre-line">

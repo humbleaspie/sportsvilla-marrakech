@@ -90,7 +90,7 @@ export default function HeroSection() {
             loop={true}
             muted={true}
             playsInline={true}
-            preload="none"
+            preload="metadata"
             poster={heroContent.videoPoster}
             className="absolute inset-0 w-full h-full object-cover"
           >

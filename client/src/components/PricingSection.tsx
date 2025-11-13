@@ -81,7 +81,7 @@ export default function PricingSection() {
             {pricingContent.badges.map((badge, index) => {
               const IconComponent = getIcon(badge.icon);
               return (
-                <Badge key={index} variant={index === pricingContent.badges.length - 1 ? "default" : "secondary"} className="px-2 md:px-3 py-0.5 md:py-1 text-[10px] md:text-sm">
+                <Badge key={index} variant="secondary" className="px-2 md:px-3 py-0.5 md:py-1 text-[10px] md:text-sm">
                   <IconComponent className="w-2.5 h-2.5 md:w-3 md:h-3 mr-0.5 md:mr-1" />
                   {badge.text}
                 </Badge>

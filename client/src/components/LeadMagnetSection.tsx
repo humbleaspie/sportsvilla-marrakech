@@ -82,7 +82,7 @@ export default function LeadMagnetSection() {
           {/* Email input */}
           <input
             type="email"
-            placeholder="Your email"
+            placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={mutation.isPending}

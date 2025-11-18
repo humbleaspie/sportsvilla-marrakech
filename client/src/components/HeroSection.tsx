@@ -121,20 +121,17 @@ export default function HeroSection() {
         </div>
       </div>
       
-      {/* Content Layout - Split Design */}
-      <div className="relative z-10 h-full flex flex-col md:flex-row items-center justify-center px-4 md:px-6 lg:px-8">
-        {/* Centered Title */}
-        <div className="flex-1 flex items-center justify-center text-center">
-          <div>
-            <h1 className="font-serif font-bold text-base md:text-2xl lg:text-3xl text-white leading-tight drop-shadow-lg">
-              {heroContent.title}
-            </h1>
-            <p className="text-xs md:text-sm lg:text-base text-white/90 mt-1 drop-shadow-md whitespace-pre-line">
-              {heroContent.subtitle}
-            </p>
-          </div>
+      {/* Content Layout - Bottom Aligned */}
+      <div className="relative z-10 h-full flex flex-col items-center justify-end pb-8 md:pb-12 lg:pb-16 px-4 md:px-6 lg:px-8">
+        {/* Bottom Aligned Title */}
+        <div className="text-center">
+          <h1 className="font-serif font-bold text-base md:text-2xl lg:text-3xl text-white leading-tight drop-shadow-lg">
+            {heroContent.title}
+          </h1>
+          <p className="text-xs md:text-sm lg:text-base text-white/90 mt-1 drop-shadow-md whitespace-pre-line">
+            {heroContent.subtitle}
+          </p>
         </div>
-
       </div>
     </section>
   );

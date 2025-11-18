@@ -89,13 +89,13 @@ export default function LeadMagnetSection() {
             data-testid="input-lead-email"
             className="border focus:outline-none focus:ring-1 focus:ring-opacity-50"
             style={{
-              height: '34px',
-              borderRadius: '6px',
+              height: '28px',
+              borderRadius: '4px',
               width: '68%',
-              maxWidth: '240px',
-              fontSize: '16px',
+              maxWidth: '200px',
+              fontSize: '13px',
               borderColor: '#DDD6CE',
-              paddingLeft: '10px'
+              paddingLeft: '8px'
             }}
           />
           
@@ -108,11 +108,11 @@ export default function LeadMagnetSection() {
             style={{
               backgroundColor: '#C48A3E',
               color: 'white',
-              height: '34px',
-              paddingLeft: '12px',
-              paddingRight: '12px',
-              borderRadius: '6px',
-              fontSize: '13px'
+              height: '28px',
+              paddingLeft: '10px',
+              paddingRight: '10px',
+              borderRadius: '4px',
+              fontSize: '12px'
             }}
           >
             {mutation.isPending ? "..." : "Get Guide"}

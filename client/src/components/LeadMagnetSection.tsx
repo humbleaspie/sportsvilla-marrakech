@@ -69,7 +69,8 @@ export default function LeadMagnetSection() {
               fontSize: '12px',
               textAlign: 'center',
               color: '#6B583F',
-              fontWeight: 400
+              fontWeight: 700,
+              textTransform: 'uppercase'
             }}
           >
             Become a Marrakech Villa Expert in just 5 minutes!

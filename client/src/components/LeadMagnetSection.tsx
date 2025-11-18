@@ -56,30 +56,29 @@ export default function LeadMagnetSection() {
         backgroundColor: '#FFF9F3',
         borderBottomColor: '#EDE6DD',
         width: '100%',
-        paddingTop: '8px',
-        paddingBottom: '12px',
-        marginTop: '8px',
-        marginBottom: '8px'
+        paddingTop: '5px',
+        paddingBottom: '5px',
+        marginTop: '6px',
+        marginBottom: '6px'
       }}
     >
       <div className="w-full px-4 md:px-6">
-        {/* Line 1: Text - centered, full width */}
+        {/* Line 1: Text - centered */}
         <div className="w-full text-center mb-1">
           <p 
             style={{ 
               fontSize: '12px',
               fontWeight: 600,
               textAlign: 'center',
-              color: '#6B583F',
-              whiteSpace: 'nowrap'
+              color: '#6B583F'
             }}
           >
-            📘 FREE GUIDE: Before You Book a Villa in Marrakech
+            FREE GUIDE: Before You Book a Marrakech Villa
           </p>
         </div>
         
-        {/* Line 2: Form - centered, prevents overflow */}
-        <form onSubmit={handleSubmit} className="flex justify-center items-center flex-wrap">
+        {/* Line 2: Form - centered as a group */}
+        <form onSubmit={handleSubmit} className="flex justify-center items-center gap-2">
           {/* Email input */}
           <input
             type="email"
@@ -89,17 +88,15 @@ export default function LeadMagnetSection() {
             disabled={mutation.isPending}
             required
             data-testid="input-lead-email"
-            className="px-3 border focus:outline-none focus:ring-1 focus:ring-opacity-50 flex-shrink-0"
+            className="border focus:outline-none focus:ring-1 focus:ring-opacity-50"
             style={{
-              display: 'inline-block',
               height: '34px',
               borderRadius: '6px',
-              width: '65%',
+              width: '68%',
               maxWidth: '240px',
               fontSize: '13px',
               borderColor: '#DDD6CE',
-              marginTop: '6px',
-              marginRight: '6px'
+              paddingLeft: '10px'
             }}
           />
           
@@ -108,7 +105,7 @@ export default function LeadMagnetSection() {
             type="submit" 
             disabled={mutation.isPending}
             data-testid="button-submit-lead"
-            className="text-white transition-colors hover:opacity-90 disabled:opacity-50 flex-shrink-0"
+            className="text-white transition-colors hover:opacity-90 disabled:opacity-50"
             style={{
               backgroundColor: '#C48A3E',
               color: 'white',

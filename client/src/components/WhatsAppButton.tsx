@@ -38,7 +38,7 @@ export default function WhatsAppButton() {
             }`}
           >
             <span className="text-sm font-semibold whitespace-nowrap">
-              Check Dates & Get Instant Quote
+              Get Quote
             </span>
           </div>
         </div>

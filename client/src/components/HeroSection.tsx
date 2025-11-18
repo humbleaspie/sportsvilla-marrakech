@@ -131,7 +131,7 @@ export default function HeroSection() {
           {/* Info Card */}
           <div className="bg-black/50 backdrop-blur-md rounded-lg p-2 md:p-3 border border-white/20">
               {/* Feature Badges */}
-              <div className="flex items-center justify-center gap-1 md:gap-1.5 mb-2 overflow-x-auto">
+              <div className="flex items-center justify-center gap-1 md:gap-1.5 overflow-x-auto">
                 {heroContent.badges.map((badge, index) => {
                   const IconComponent = badge.icon === 'MapPin' ? MapPin : badge.icon === 'Users' ? Users : badge.icon === 'Home' ? Home : null;
                   return (
@@ -142,19 +142,6 @@ export default function HeroSection() {
                   );
                 })}
               </div>
-              
-              {/* WhatsApp CTA */}
-              <Button 
-                asChild
-                variant="outline"
-                size="default"
-                className="w-full text-xs md:text-sm bg-[#25D366] hover:bg-[#20BD5A] text-white border-[#25D366]"
-                data-testid="button-whatsapp-hero"
-              >
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
-                  {heroContent.ctaText}
-                </a>
-              </Button>
           </div>
         </div>
       </div>

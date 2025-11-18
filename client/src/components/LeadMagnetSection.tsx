@@ -68,11 +68,11 @@ export default function LeadMagnetSection() {
             style={{ 
               fontSize: '12px',
               textAlign: 'center',
-              color: '#6B583F'
+              color: '#6B583F',
+              fontWeight: 400
             }}
           >
-            <span style={{ fontWeight: 900 }}>FREE GUIDE</span>
-            <span style={{ fontWeight: 400 }}> to choosing the Perfect Marrakech Villa</span>
+            Become a Marrakech Villa Expert in just 5 minutes!
           </p>
         </div>
         
@@ -124,7 +124,7 @@ export default function LeadMagnetSection() {
               verticalAlign: 'middle'
             }}
           >
-            {mutation.isPending ? "..." : "Get Guide"}
+            {mutation.isPending ? "..." : "Send Me Guide"}
           </button>
         </form>
       </div>

@@ -53,28 +53,28 @@ export default function LeadMagnetSection() {
     <section 
       className="w-full border-b"
       style={{ 
-        backgroundColor: '#FAF7F2',
-        borderBottomColor: '#E6DED5',
+        backgroundColor: '#FFF9F3',
+        borderBottomColor: '#EDE6DD',
         width: '100%',
-        paddingTop: '10px',
-        paddingBottom: '10px',
-        marginTop: '10px',
-        marginBottom: '10px'
+        paddingTop: '8px',
+        paddingBottom: '12px',
+        marginTop: '8px',
+        marginBottom: '8px'
       }}
     >
       <div className="w-full px-4 md:px-6">
         {/* Line 1: Text - centered, full width */}
-        <div className="w-full text-center mb-2">
+        <div className="w-full text-center mb-1">
           <p 
-            className="text-[10px] md:text-[13px]"
             style={{ 
+              fontSize: '12px',
               fontWeight: 600,
               textAlign: 'center',
-              color: '#333',
+              color: '#6B583F',
               whiteSpace: 'nowrap'
             }}
           >
-            FREE GUIDE: Don't Book a Marrakech Villa Before Reading This
+            📘 FREE GUIDE: Before You Book a Villa in Marrakech
           </p>
         </div>
         
@@ -91,14 +91,15 @@ export default function LeadMagnetSection() {
             data-testid="input-lead-email"
             className="px-3 border focus:outline-none focus:ring-1 focus:ring-opacity-50 flex-shrink-0"
             style={{
-              height: '32px',
+              display: 'inline-block',
+              height: '34px',
               borderRadius: '6px',
-              width: '70%',
-              maxWidth: '260px',
-              minWidth: '150px',
+              width: '65%',
+              maxWidth: '240px',
               fontSize: '13px',
-              borderColor: '#D8D4CD',
-              marginRight: '8px'
+              borderColor: '#DDD6CE',
+              marginTop: '6px',
+              marginRight: '6px'
             }}
           />
           
@@ -111,9 +112,9 @@ export default function LeadMagnetSection() {
             style={{
               backgroundColor: '#C48A3E',
               color: 'white',
-              height: '32px',
-              paddingLeft: '14px',
-              paddingRight: '14px',
+              height: '34px',
+              paddingLeft: '12px',
+              paddingRight: '12px',
               borderRadius: '6px',
               fontSize: '13px'
             }}

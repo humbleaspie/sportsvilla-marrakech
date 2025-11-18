@@ -63,55 +63,57 @@ export default function LeadMagnetSection() {
       }}
     >
       <div className="w-full px-4 md:px-6 h-full">
-        <div className="flex flex-row items-center justify-between h-full">
-          {/* Left: Text */}
+        <form onSubmit={handleSubmit} className="flex flex-row items-center h-full" style={{ gap: '12px' }}>
+          {/* Text */}
           <p 
+            className="flex-shrink-0"
             style={{ 
               fontSize: '12.5px',
               fontWeight: 600,
-              color: '#333'
+              color: '#333',
+              marginRight: 'auto'
             }}
           >
             FREE GUIDE: Don't Book a Marrakech Villa Before Reading This
           </p>
           
-          {/* Right: Email form */}
-          <form onSubmit={handleSubmit} className="flex flex-shrink-0" style={{ gap: '12px' }}>
-            <input
-              type="email"
-              placeholder="Your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              disabled={mutation.isPending}
-              required
-              data-testid="input-lead-email"
-              className="px-3 border focus:outline-none focus:ring-1 focus:ring-opacity-50"
-              style={{
-                height: '30px',
-                borderRadius: '6px',
-                width: '150px',
-                fontSize: '12px',
-                borderColor: '#D8D4CD'
-              }}
-            />
-            <button 
-              type="submit" 
-              disabled={mutation.isPending}
-              data-testid="button-submit-lead"
-              className="text-white transition-colors hover:opacity-90 disabled:opacity-50"
-              style={{
-                backgroundColor: '#C48A3E',
-                height: '30px',
-                paddingLeft: '12px',
-                paddingRight: '12px',
-                borderRadius: '6px',
-                fontSize: '12px'
-              }}
-            >
-              {mutation.isPending ? "..." : "Get Guide"}
-            </button>
-          </form>
-        </div>
+          {/* Email input */}
+          <input
+            type="email"
+            placeholder="Your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            disabled={mutation.isPending}
+            required
+            data-testid="input-lead-email"
+            className="px-3 border focus:outline-none focus:ring-1 focus:ring-opacity-50 flex-shrink-0"
+            style={{
+              height: '30px',
+              borderRadius: '6px',
+              width: '150px',
+              fontSize: '12px',
+              borderColor: '#D8D4CD'
+            }}
+          />
+          
+          {/* Button */}
+          <button 
+            type="submit" 
+            disabled={mutation.isPending}
+            data-testid="button-submit-lead"
+            className="text-white transition-colors hover:opacity-90 disabled:opacity-50 flex-shrink-0"
+            style={{
+              backgroundColor: '#C48A3E',
+              height: '30px',
+              paddingLeft: '12px',
+              paddingRight: '12px',
+              borderRadius: '6px',
+              fontSize: '12px'
+            }}
+          >
+            {mutation.isPending ? "..." : "Get Guide"}
+          </button>
+        </form>
       </div>
     </section>
   );

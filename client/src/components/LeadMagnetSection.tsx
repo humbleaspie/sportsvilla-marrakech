@@ -55,11 +55,11 @@ export default function LeadMagnetSection() {
       style={{ 
         backgroundColor: '#FAF7F2',
         borderBottomColor: '#E6DED5',
-        height: '48px',
+        height: '42px',
         marginTop: '8px',
         marginBottom: '8px',
-        paddingTop: '6px',
-        paddingBottom: '6px'
+        paddingTop: '4px',
+        paddingBottom: '4px'
       }}
     >
       <div className="w-full px-4 md:px-6 h-full">

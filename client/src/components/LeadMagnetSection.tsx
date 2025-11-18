@@ -55,10 +55,11 @@ export default function LeadMagnetSection() {
       style={{ 
         backgroundColor: '#FAF7F2',
         borderBottomColor: '#E6DED5',
+        width: '100%',
+        paddingTop: '10px',
+        paddingBottom: '10px',
         marginTop: '10px',
-        marginBottom: '12px',
-        paddingTop: '8px',
-        paddingBottom: '8px'
+        marginBottom: '10px'
       }}
     >
       <div className="w-full px-4 md:px-6">
@@ -66,9 +67,11 @@ export default function LeadMagnetSection() {
         <div className="w-full text-center mb-2">
           <p 
             style={{ 
-              fontSize: '12px',
+              fontSize: '13px',
               fontWeight: 600,
-              color: '#333'
+              textAlign: 'center',
+              color: '#333',
+              whiteSpace: 'nowrap'
             }}
           >
             FREE GUIDE: Don't Book a Marrakech Villa Before Reading This
@@ -76,7 +79,7 @@ export default function LeadMagnetSection() {
         </div>
         
         {/* Line 2: Form - centered */}
-        <form onSubmit={handleSubmit} className="flex justify-center items-center" style={{ gap: '12px' }}>
+        <form onSubmit={handleSubmit} className="flex justify-center items-center">
           {/* Email input */}
           <input
             type="email"
@@ -88,11 +91,13 @@ export default function LeadMagnetSection() {
             data-testid="input-lead-email"
             className="px-3 border focus:outline-none focus:ring-1 focus:ring-opacity-50"
             style={{
-              height: '28px',
+              height: '32px',
               borderRadius: '6px',
-              width: '150px',
-              fontSize: '12px',
-              borderColor: '#D8D4CD'
+              width: '70%',
+              maxWidth: '260px',
+              fontSize: '13px',
+              borderColor: '#D8D4CD',
+              marginRight: '8px'
             }}
           />
           
@@ -104,11 +109,12 @@ export default function LeadMagnetSection() {
             className="text-white transition-colors hover:opacity-90 disabled:opacity-50"
             style={{
               backgroundColor: '#C48A3E',
-              height: '28px',
-              paddingLeft: '12px',
-              paddingRight: '12px',
+              color: 'white',
+              height: '32px',
+              paddingLeft: '14px',
+              paddingRight: '14px',
               borderRadius: '6px',
-              fontSize: '12px'
+              fontSize: '13px'
             }}
           >
             {mutation.isPending ? "..." : "Get Guide"}

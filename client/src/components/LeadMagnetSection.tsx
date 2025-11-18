@@ -56,8 +56,8 @@ export default function LeadMagnetSection() {
         backgroundColor: '#FAF7F2',
         borderBottomColor: '#E6DED5',
         height: '42px',
-        marginTop: '8px',
-        marginBottom: '8px',
+        marginTop: '10px',
+        marginBottom: '12px',
         paddingTop: '4px',
         paddingBottom: '4px'
       }}

@@ -89,7 +89,7 @@ export default function LeadMagnetSection() {
             data-testid="input-lead-email"
             className="px-3 border focus:outline-none focus:ring-1 focus:ring-opacity-50 flex-shrink-0"
             style={{
-              height: '30px',
+              height: '28px',
               borderRadius: '6px',
               width: '150px',
               fontSize: '12px',

@@ -72,7 +72,7 @@ export default function LeadMagnetSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={mutation.isPending}
-              className="flex-1 text-xs h-8"
+              className="flex-1 text-base h-8"
               data-testid="input-lead-email"
               required
             />

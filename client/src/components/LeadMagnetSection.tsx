@@ -67,12 +67,12 @@ export default function LeadMagnetSection() {
           <p 
             style={{ 
               fontSize: '12px',
-              fontWeight: 600,
               textAlign: 'center',
               color: '#6B583F'
             }}
           >
-            FREE GUIDE - How to Choose the Right Marrakech Villa
+            <span style={{ fontWeight: 700 }}>FREE GUIDE</span>
+            <span style={{ fontWeight: 400 }}> - How to Choose the Right Marrakech Villa</span>
           </p>
         </div>
         

@@ -1,9 +1,6 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
-import { Gift } from "lucide-react";
 
 export default function LeadMagnetSection() {
   const [email, setEmail] = useState("");
@@ -53,38 +50,61 @@ export default function LeadMagnetSection() {
   };
 
   return (
-    <section className="py-2 bg-card border-y border-border">
-      <div className="max-w-5xl mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-3">
-          {/* Left: Heading with icon */}
-          <div className="flex items-center gap-2 text-center md:text-left">
-            <Gift className="w-4 h-4 text-muted-foreground flex-shrink-0" />
-            <p className="text-xs md:text-sm text-foreground">
-              <span className="font-bold text-foreground">FREE GUIDE:</span> <span className="font-normal">Don't Book a Marrakech Villa Before Reading this</span>
-            </p>
-          </div>
+    <section 
+      className="w-full border-b py-2"
+      style={{ 
+        backgroundColor: '#F8F4EF',
+        borderBottomColor: '#E8E1D9',
+        minHeight: '45px',
+        maxHeight: '55px'
+      }}
+    >
+      <div className="w-full px-4 md:px-6 h-full">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-2 h-full">
+          {/* Left: Text */}
+          <p 
+            className="text-left"
+            style={{ 
+              fontSize: '13px',
+              fontWeight: 500,
+              color: '#3A3A3A'
+            }}
+          >
+            <span style={{ fontWeight: 600 }}>FREE GUIDE:</span> Don't Book a Marrakech Villa Before Reading This
+          </p>
           
           {/* Right: Email form */}
-          <form onSubmit={handleSubmit} className="flex gap-2 w-full md:w-auto md:min-w-[280px]">
-            <Input
+          <form onSubmit={handleSubmit} className="flex gap-2 flex-shrink-0">
+            <input
               type="email"
               placeholder="Your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={mutation.isPending}
-              className="flex-1 text-base h-8"
-              data-testid="input-lead-email"
               required
+              data-testid="input-lead-email"
+              className="px-3 text-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-opacity-50"
+              style={{
+                height: '32px',
+                borderRadius: '6px',
+                minWidth: '200px',
+                fontSize: '13px'
+              }}
             />
-            <Button 
+            <button 
               type="submit" 
               disabled={mutation.isPending}
-              size="sm"
-              className="text-xs whitespace-nowrap h-8"
               data-testid="button-submit-lead"
+              className="px-4 font-medium text-white transition-colors hover:opacity-90 disabled:opacity-50"
+              style={{
+                backgroundColor: '#C48A3E',
+                height: '32px',
+                borderRadius: '6px',
+                fontSize: '13px'
+              }}
             >
               {mutation.isPending ? "..." : "Get Guide"}
-            </Button>
+            </button>
           </form>
         </div>
       </div>

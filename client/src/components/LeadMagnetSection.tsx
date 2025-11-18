@@ -70,7 +70,10 @@ export default function LeadMagnetSection() {
               fontSize: '13px',
               fontWeight: 600,
               textAlign: 'center',
-              color: '#333'
+              color: '#333',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
             }}
           >
             FREE GUIDE: Don't Book a Marrakech Villa Before Reading This

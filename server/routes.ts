@@ -6,6 +6,9 @@ import { Resend } from "resend";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
+console.log("Resend configured:", !!resend);
+console.log("Notification email configured:", !!process.env.NOTIFICATION_EMAIL);
+
 export async function registerRoutes(app: Express): Promise<Server> {
   // Enquiry submission endpoint
   app.post("/api/enquiries", async (req, res) => {
@@ -16,7 +19,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       if (resend && process.env.NOTIFICATION_EMAIL) {
         try {
-          await resend.emails.send({
+          const result = await resend.emails.send({
             from: 'Villa Enquiries <enquiries@vipatmarrakech.com>',
             to: process.env.NOTIFICATION_EMAIL,
             subject: `New Villa Enquiry from ${validatedData.name}`,
@@ -30,6 +33,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
               <p><small>Received: ${new Date().toLocaleString()}</small></p>
             `,
           });
+          
+          if (result.error) {
+            console.error("Resend API error:", result.error);
+          }
         } catch (emailError) {
           console.error("Failed to send email notification:", emailError);
         }
@@ -50,6 +57,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const { email } = req.body;
       
+      console.log("Lead magnet request received for email:", email);
+      
       if (!email || !email.includes('@')) {
         return res.status(400).json({ 
           success: false, 
@@ -60,7 +69,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Send notification email to owner with the lead's email
       if (resend && process.env.NOTIFICATION_EMAIL) {
         try {
-          await resend.emails.send({
+          console.log("Attempting to send email via Resend...");
+          const result = await resend.emails.send({
             from: 'Villa Enquiries <enquiries@vipatmarrakech.com>',
             to: process.env.NOTIFICATION_EMAIL,
             subject: `New Lead: Free Guide Request`,
@@ -72,6 +82,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
               <p><small>Received: ${new Date().toLocaleString()}</small></p>
             `,
           });
+          
+          // Check if Resend returned an error in the response
+          if (result.error) {
+            console.error("Resend API error:", result.error);
+            return res.status(500).json({ 
+              success: false, 
+              error: "Email service error. Please check API configuration." 
+            });
+          }
+          
+          console.log("Email sent successfully via Resend:", result);
         } catch (emailError) {
           console.error("Failed to send lead notification:", emailError);
           return res.status(500).json({ 
@@ -79,6 +100,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
             error: "Failed to send notification" 
           });
         }
+      } else {
+        console.warn("Email not sent: Resend or NOTIFICATION_EMAIL not configured");
       }
       
       res.json({ success: true, message: "Guide will be sent to your email" });

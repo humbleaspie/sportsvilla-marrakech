@@ -105,20 +105,23 @@ export default function LeadMagnetSection() {
             type="submit" 
             disabled={mutation.isPending}
             data-testid="button-submit-lead"
-            className="text-white transition-colors hover:opacity-90 disabled:opacity-50"
+            className="transition-colors hover:opacity-90 disabled:opacity-50"
             style={{
               backgroundColor: '#C48A3E',
               color: 'white',
               height: '28px',
-              paddingTop: '0',
-              paddingBottom: '0',
-              paddingLeft: '10px',
-              paddingRight: '10px',
+              minHeight: '28px',
+              maxHeight: '28px',
+              padding: '0 10px',
               borderRadius: '4px',
               fontSize: '12px',
-              lineHeight: '28px',
+              lineHeight: '1',
               boxSizing: 'border-box',
-              border: 'none'
+              border: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              verticalAlign: 'middle'
             }}
           >
             {mutation.isPending ? "..." : "Get Guide"}

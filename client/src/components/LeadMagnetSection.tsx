@@ -68,10 +68,11 @@ export default function LeadMagnetSection() {
           <p 
             className="flex-shrink-0"
             style={{ 
-              fontSize: '12.5px',
+              fontSize: '12px',
               fontWeight: 600,
               color: '#333',
-              marginRight: 'auto'
+              marginRight: 'auto',
+              whiteSpace: 'nowrap'
             }}
           >
             FREE GUIDE: Don't Book a Marrakech Villa Before Reading This

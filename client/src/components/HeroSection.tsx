@@ -151,21 +151,19 @@ export default function HeroSection() {
               {heroContent.subtitle}
             </p>
             
-            {/* Play/Pause Button */}
-            <div className="mt-6 flex justify-center">
-              <button
-                onClick={togglePlayPause}
-                data-testid="button-video-toggle"
-                className="group flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-110"
-                aria-label={isPlaying ? "Pause video" : "Play video"}
-              >
-                {isPlaying ? (
-                  <Pause className="w-8 h-8 text-white drop-shadow-lg" />
-                ) : (
+            {/* Play Button - Only show if video is not playing */}
+            {!isPlaying && (
+              <div className="mt-6 flex justify-center">
+                <button
+                  onClick={togglePlayPause}
+                  data-testid="button-video-play"
+                  className="group flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-110"
+                  aria-label="Play video"
+                >
                   <Play className="w-8 h-8 text-white drop-shadow-lg ml-1" />
-                )}
-              </button>
-            </div>
+                </button>
+              </div>
+            )}
           </div>
         </div>
 

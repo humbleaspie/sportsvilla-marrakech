@@ -115,7 +115,7 @@ export default function HeroSection() {
       {/* Black Friday Sale Banner - Top */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20">
         <div className="bg-black/60 backdrop-blur-md rounded-lg px-4 py-2 border border-yellow-400/50">
-          <p className="text-yellow-300 text-sm md:text-base font-bold text-center whitespace-nowrap">
+          <p className="text-white text-sm md:text-base font-bold text-center whitespace-nowrap">
             ⚡ Black Friday Sale – Save £150/night ⚡
           </p>
         </div>

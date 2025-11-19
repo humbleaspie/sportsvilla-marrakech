@@ -112,15 +112,6 @@ export default function HeroSection() {
         </div>
       )}
       
-      {/* Black Friday Sale Banner - Top */}
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20">
-        <div className="bg-black/60 backdrop-blur-md rounded-lg px-4 py-2 border border-yellow-400/50">
-          <p className="text-yellow-300 text-sm md:text-base font-bold text-center whitespace-nowrap">
-            ⚡ Black Friday Sale – Save £150/night ⚡
-          </p>
-        </div>
-      </div>
-      
       {/* Content Layout - Bottom Aligned */}
       <div className="relative z-10 h-full flex flex-col items-center justify-end pb-8 md:pb-12 lg:pb-16 px-4 md:px-6 lg:px-8">
         {/* Bottom Aligned Title */}
@@ -131,6 +122,15 @@ export default function HeroSection() {
           <p className="text-xs md:text-sm lg:text-base text-white/90 mt-1 drop-shadow-md whitespace-pre-line">
             {heroContent.subtitle}
           </p>
+        </div>
+        
+        {/* Black Friday Sale Banner - Bottom */}
+        <div className="mt-4">
+          <div className="bg-black/60 backdrop-blur-md rounded-lg px-4 py-2 border border-yellow-400/50">
+            <p className="text-yellow-300 text-sm md:text-base font-bold text-center whitespace-nowrap">
+              ⚡ Black Friday Sale – Save £150/night ⚡
+            </p>
+          </div>
         </div>
       </div>
     </section>

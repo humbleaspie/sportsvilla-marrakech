@@ -166,7 +166,7 @@ export default function ContactForm() {
         </Button>
 
         <p className="text-xs md:text-sm text-center text-muted-foreground">
-          We'll respond within 2 hours. For urgent enquiries, WhatsApp us directly.
+          We reply within 45 minutes. Dates fill fast — especially weekends.
         </p>
       </form>
     </Card>

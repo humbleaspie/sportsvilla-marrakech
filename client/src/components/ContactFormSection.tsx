@@ -19,7 +19,7 @@ export default function ContactFormSection() {
             </p>
           </div>
           <p className="text-xs md:text-sm text-muted-foreground">
-            (We will reply within 2hrs)
+            We reply within 45 minutes. Dates fill fast — especially weekends.
           </p>
         </div>
         

@@ -69,11 +69,10 @@ export default function LeadMagnetSection() {
               fontSize: '12px',
               textAlign: 'center',
               color: '#6B583F',
-              fontWeight: 700,
-              textTransform: 'uppercase'
+              fontWeight: 700
             }}
           >
-            👉 Marrakech Villas - Avoid these 7 Mistakes!
+            👉 MARRAKECH VILLAS - Avoid these 7 Mistakes!
           </p>
         </div>
         

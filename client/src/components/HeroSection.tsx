@@ -85,7 +85,7 @@ export default function HeroSection() {
   }, [hasInteracted]);
 
   return (
-    <section id="home" className="relative h-[70vh] md:h-[75vh] lg:h-[80vh] w-full overflow-hidden">
+    <section id="home" className="relative h-[70vh] md:h-[75vh] lg:h-[80vh] w-full overflow-hidden bg-gray-500">
       {/* Video Background - Full Screen */}
       {heroContent.videoUrl ? (
         <div className="absolute inset-0">
@@ -101,14 +101,14 @@ export default function HeroSection() {
           >
             <source src={heroContent.videoUrl} type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-700/50 via-gray-600/25 to-transparent" />
         </div>
       ) : (
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroContent.backgroundImage})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-700/40 via-transparent to-gray-600/30" />
         </div>
       )}
       

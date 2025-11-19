@@ -26,7 +26,7 @@ export const seoContent = {
   metaDescription: "Luxury 6-bed sports villa in Marrakech with heated pool, padel court, basketball, gym, cook & maid. Sleeps 12. Save £150/night. Perfect for group getaways.",
   
   // Hero Section Title (H1 - also used in OG tags)
-  heroTitle: "Your Private Sports Resort to make Memories",
+  heroTitle: "Your Private Sports Resort to Make Memories",
   
   // Hero Section Subtitle
   heroSubtitle: "6-Bed Luxury Sports Villa • Heated Pool • Padel Court • Private Staff",

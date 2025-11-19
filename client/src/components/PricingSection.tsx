@@ -116,6 +116,22 @@ export default function PricingSection() {
             {pricingContent.bonusText}
           </p>
         </Card>
+        
+        {/* Trust Badges */}
+        <div className="mt-4 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6">
+          <div className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground">
+            <span className="text-base md:text-lg">⭐</span>
+            <span className="font-medium">4.9/5 Rating From Past Guests</span>
+          </div>
+          <div className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground">
+            <span className="text-base md:text-lg">🏆</span>
+            <span className="font-medium">Operating Since 2016</span>
+          </div>
+          <div className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground">
+            <span className="text-base md:text-lg">🔒</span>
+            <span className="font-medium">100% Secure Booking Process</span>
+          </div>
+        </div>
       </div>
     </section>
   );

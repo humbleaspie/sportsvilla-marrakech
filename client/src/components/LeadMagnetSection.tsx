@@ -125,7 +125,7 @@ export default function LeadMagnetSection() {
               verticalAlign: 'middle'
             }}
           >
-            {mutation.isPending ? "..." : "Reveal The 7 Mistakes"}
+            {mutation.isPending ? "..." : "Send Me Guide"}
           </button>
         </form>
         

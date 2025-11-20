@@ -53,13 +53,13 @@ export default function LeadMagnetSection() {
     <section 
       className="w-full"
       style={{ 
-        backgroundColor: '#FFF7E9',
+        backgroundColor: '#F5F5F5',
         width: '100%',
         paddingTop: '5px',
         paddingBottom: '5px',
         marginTop: '6px',
         marginBottom: '6px',
-        borderBottom: '1px solid #E5DED3'
+        borderBottom: '1px solid #DDDDDD'
       }}
     >
       <div className="w-full px-4 md:px-6">

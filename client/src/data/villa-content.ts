@@ -295,7 +295,8 @@ export const pricingContent = {
   ],
   
   badges: [
-    { text: "Dates are going quickly", icon: "Calendar" }
+    { text: "Dates are going quickly", icon: "Calendar" },
+    { text: "Sale Ends 30th Nov", icon: "Sparkles" }
   ],
   
   bonusText: ""
